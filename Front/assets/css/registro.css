@@ -1,0 +1,22 @@
+body {
+    margin: 50px auto;
+}
+.btn{
+    background-color:#023B48
+}
+.btn:hover{
+    background-color:#006075
+}
+
+@media (min-width: 992px) {
+    form{
+        background-color: aliceblue;
+        padding: 2%;
+    }
+    body {
+        margin: 200px auto;
+        padding: 2%;
+        width: 50%;
+        height: 35%;      
+    }
+}
