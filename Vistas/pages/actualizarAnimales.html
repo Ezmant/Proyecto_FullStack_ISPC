@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,8 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/perfil.css">
     <link rel="stylesheet" href="style.css">
-    <a href="https://www.flaticon.com/free-icons/paw" title="paw icons">Paw icons created by Freepik - Flaticon</a>
-    <title>Mi Cuenta</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/icon.png">
+    <title>Modificar Animal</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#006075;">
@@ -61,71 +61,45 @@
 
 
     
-   
+    <main>
     <div class="wrapper  mt-sm-5">
-        <h4 class="pb-4 border-bottom">Perfil</h4>
+        <h4 class="pb-4 border-bottom">Modificar Animales para adopción</h4>
         <form name="formulario" id="formulario" action="../index.html" class="needs-validation" onsubmit="" method="post" novalidate>
         <div class="py-2">
             <div class="row py-2">
                 <div class="col-md-6">
-                    <label for="nombre">Nombre Completo</label>
-                    <input type="text" class="bg-light form-control" placeholder="Federico Casas" name="nombre" required>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="bg-light form-control" placeholder="Masita" name="nombre" required>
                 </div>
                 <div class="col-md-6 pt-md-0 pt-3">
-                    <label for="dni">DNI</label>
-                    <input name="dni" type="number" class="bg-light form-control" placeholder="21309123" MIN=1000000 MAX=99999999 required>
+                    <label for="edad">Edad</label>
+                    <input name="edad" type="number" class="bg-light form-control" placeholder="12" MIN=1000000 MAX=99999999 required>
                 </div>
                 
             </div>
             <div class="row py-2">
                 <div class="col-md-6">
-                    <label for="email">Email</label>
-                    <input name="email" id="mail" type="text" class="bg-light form-control" placeholder="usuario@email.com" required>
-                    <span class="error" aria-live="polite"></span>
+                    <label for="raza">Raza</label>
+                    <input type="text" class="bg-light form-control" placeholder="mestizo, nombre de raza" name="raza" required>
                 </div>
-                <div class="col-md-6 pt-md-0 pt-3">
-                    <label for="phone">Teléfono</label>
-                    <input type="number" name="phone" class="bg-light form-control" placeholder="3092123456" min="100000" max="999999999" required>
-                    <span id="phone-text"></span>
+                <div class="col-md-6">
+                    <label for="raza">Foto del animal</label>
+                    <input type="file" class="bg-light form-control" placeholder="" name="foto" required>
                 </div>
             </div>
             <div class="row py-2">
                 <div class="col-md-6">
-                    <label for="country">País</label>
-                    <select name="country" id="country" class="bg-light">
-                    <option value="1">Buenos Aires</option>
-                    <option value="2">Catamarca</option>
-                    <option value="3">Chaco</option>
-                    <option value="4">Chubut</option>
-                    <option value="5">Córdoba</option>
-                    <option value="6">Corrientes</option>
-                    <option value="7">Entre Rios</option>
-                    <option value="8">Formosa</option>
-                    <option value="9">Jujuy</option>
-                    <option value="10">La Pampa</option>
-                    <option value="11">La Rioja</option>
-                    <option value="12">Mendoza</option>
-                    <option value="13">Misiones</option>
-                    <option value="14">Neuquén</option>
-                    <option value="15">Río Negro</option>
-                    <option value="16">Salta</option>
-                    <option value="17">San Juan</option>
-                    <option value="18">San Luis</option>
-                    <option value="19">Santa Cruz</option>
-                    <option value="20">Santa Fe</option>
-                    <option value="21">Santiago del Estero</option>
-                    <option value="22">Tierra del Fuego</option>
-                    <option value="23">Tucumán</option>
+                    <label for="tamaño">Tamaño</label>
+                    <select name="tamaño" id="tamaño" class="bg-light">
+                    <option value="1">Chico</option>
+                    <option value="2">Mediano</option>
+                    <option value="3">Grande</option>
                     </select>
                 </div>
                 <div class="col-md-6 pt-md-0 pt-3">
-                    <label for="ciudad">Ciudad</label>
-                    <input type="text" name="ciudad" class="bg-light form-control" placeholder="Rosario" minlength="3" maxlength="20" required>
+                    <label for="ciudad">Tipo</label>
+                    <input type="text" name="tipo" class="bg-light form-control" placeholder="Gato o perro" minlength="3" maxlength="20" required>
                 </div>
-                </div>
-                <div class="col-md-6 pt-md-0 pt-3">
-                    <label for="postal">Código Postal</label>
-                    <input type="number" name="postal" class="bg-light form-control" placeholder="3222" max="9999" min="0" required>
                 </div>
             </div>
             <div class="py-3 pb-4 border-bottom">
@@ -136,6 +110,7 @@
         </div>
     </div>
     </form>
+    </main>
     <br>
     <br><br><br><br><br>
     <footer id="footer-special" class="bg-light text-center text-white">
