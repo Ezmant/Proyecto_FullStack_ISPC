@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    background-color:#023B48
+}
+.btn:hover{
+    background-color:#006075
+}
+
+@media (min-width: 992px) {
+    .contenedor-form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+.contenedor{
+    margin: 50px auto;
+}
+
+a{
+    color: #023B48;
+}
+a:hover{
+    color: #006075;
+    text-decoration: none;
+}
+
+.btn{
+    background-color:#023B48
+}
+.btn:hover{
+    background-color:#006075
+}
+@media (min-width: 992px) {
+    .contenedor {
+        background-color: aliceblue;
+        margin: 200px auto;
+        padding: 2%;
+        width: 35%;
+        height: 35%;      
+    }
+}
+
