@@ -11,7 +11,8 @@
 </header>
 
 <br />
-
+Aclaracion
+La carpeta "Vistas" equivale a la carpeta "Front" y las carpeta "Modelos" y "Controladores" al "Back"
  
 <section id="about-the-project">
   <h2>Funcionalidades del sitio web</h2>
