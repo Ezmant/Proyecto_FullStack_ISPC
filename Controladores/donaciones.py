@@ -1,3 +1,0 @@
-#donantes{}
-
-#mostrarDonadores()
