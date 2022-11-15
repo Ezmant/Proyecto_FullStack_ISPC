@@ -1,49 +1,27 @@
 
+(() => {
 
-function validarDatos() {
-    var animal=document.getElementById("animal").value
-    var direccion=document.getElementById("direccion").value
-    var ciudad=document.getElementById("cuidad").value
-    var provincia=document.getElementById("provincia").value
-    var cod_postal=document.getElementById("codigo_postal").value
-    
-    if (animal == "") {
-        alert("Debe seleccionar un animal")
-        document.getElementById("animal").focus();//este hace que valla al cuadro de texto del codigo postal para que lo digite
-        return false
-    }else {
-        return true
+    const forms = document.querySelectorAll('.needs-validation')
+    let text = document.getElementById("dinamic-text");
+  
+  //validanto todo el formulario
+  
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+          alert("Por favor, complete todos los campos requeridos");
+          text.innerHTML = "Por favor, complete todos los campos requeridos";
+        }else{
+              alert("Formulario enviado");
+  
+      }
+        form.classList.add('was-validated')
+      }, false)
     }
-    
-    if (direccion == "") {
-        alert("Debe ingresar una direccion")
-        document.getElementById("direccion").focus();//este hace que valla al cuadro de texto del codigo postal para que lo digite
-        return false
-    }else {
-        return true
-    }
-    if (ciudad == "") {
-        alert("Debe ingresar una cuidad")
-        document.getElementById("cuidad").focus();//este hace que valla al cuadro de texto del codigo postal para que lo digite
-        return false
-    }else {
-        return true
-    }
-    if (provincia == "") {
-        alert("Debe ingresar una provincia")
-        document.getElementById("provincia").focus();//este hace que valla al cuadro de texto del codigo postal para que lo digite
-        return false
-    }else {
-        return true
-    }
-    if (cod_postal == "") {
-        alert("Debe ingresar un codigp postal")
-        document.getElementById("cod_postal").focus();//este hace que valla al cuadro de texto del codigo postal para que lo digite
-        return false
-    }else {
-        return true
-    }
-
-}
-
-
+    )
+  })()
+  
+  
+  

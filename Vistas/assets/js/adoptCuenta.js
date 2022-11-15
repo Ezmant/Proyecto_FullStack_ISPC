@@ -14,7 +14,7 @@
         alert("Por favor, complete todos los campos requeridos");
         text.innerHTML = "Por favor, complete todos los campos requeridos";
       }else{
-            alert("Datos actualizados correctamente, redirigiendo al inicio");
+            alert("Formulario enviado");
 
     }
       form.classList.add('was-validated')
