@@ -24,6 +24,18 @@ a:hover{
 .btn:hover{
     background-color:#006075
 }
+
+#invalidEmail, #invalidPass {
+    display: none;
+    color: red
+}
+
+#formValid {
+    color: green;
+    margin-top: 10px;
+    display: none;
+}
+
 @media (min-width: 992px) {
     .contenedor {
         background-color: aliceblue;

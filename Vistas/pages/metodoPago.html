@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="../assets/css/pagos.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../assets/css/navbar.css">
+        <link rel="icon" type="image/x-icon" href="../assets/img/icon.png">
     <title>Metodo de pago</title>
 </head>
 
@@ -69,14 +71,15 @@
     <a href="https://cafecito.app/webanimales"><img src="../assets/img/cafecito.png" class="img-thumbnail"
             alt="mercado pago" width="200px"></a>
     <h3>¿Ya donaste? Ingresa el monto para notificarnos el pago.</h3>
-
-    <form class="container-sm">
+    <form name="donacion" class="container-sm" onsubmit="submitForm(event)">
         <div class="mb-3 col-5">
-            <input type="number" class="form-control" id="monto">
+            <input type="number" class="form-control" id="monto" name="monto">
         </div>
         <div class="enviar"></div>
         <button type="submit" class="btn btn-primary">Notificar</button>
     </form>
+    <p id="montoInvalid">Ingrese un monto</p>
+    <p id="montoValid">Gracias por su donación!</p>
 
     <br>
     <br><br><br><br><br>
@@ -146,6 +149,7 @@
       </div>
       <!-- Copyright -->
   </footer>
+  <script src="../assets/js/metodoPago.js"></script>
 </body>
 
 </html>

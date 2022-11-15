@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.body-special {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#footer-special{
+    margin-top: auto;
+    width: 100%;
+}
+
+.botoncont{
+    display: inline-block;
+    position: relative;
+    top: 2%;
+    width: 100%;
+    height: 10%;
+    background-color: aliceblue;
+    padding-bottom: 2% ;
+    border-bottom: solid 1px;
+    border-color: rgb(185, 185, 185);
+}
+
+
+
+.bton {
+    display: inline-block;
+    font-size: 100%;
+    background-color: rgb(160, 231, 225);
+    color: rgb(0, 0, 0);
+    border: solid 2px;
+    border-color: darkslategrey;
+    padding: 1%;
+    left: 20%;
+    margin-top: 1%;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    min-height: 100px;
+    height: 50%;
+}
+.bton:hover{
+    background-color: rgba(106, 181, 190, 0.959);
+    color: rgb(252, 252, 252);
+}
+.bton1{
+    display: inline-block;
+    font-size: 100%;
+    background-color: rgb(35, 109, 103);
+    color: rgb(255, 255, 255);
+    border: solid 2px;
+    border-color: rgb(31, 168, 168);
+    padding: 1%;
+    margin-left: 0%;
+    margin-top: 1%;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    min-height: 100px;
+    left: 20%;
+    height: 50%;
+}
+.bton1:hover{
+    color: rgb(3, 3, 3);
+    background-color: rgb(14, 71, 67);
+}
+
+
+.addopt #Adoptatumascota{
+    text-align: center;
+    margin-left: 13%;
+    padding-left: 1%;
+    padding-top: 3%;
+}
+
+
+@media screen and (max-width:600px) {
+    .addoppt {
+      
+        text-align: left;
+        margin-left: -12%;
+    }
+    .Presentacion {
+        
+        margin-left: 100%;
+        text-align: left;
+    }
+    .bton{
+        margin-left: -13%;
+        width: 200px;
+    }
+    .bton1{
+        margin-left: 0%;
+        width: 200px;
+    }
+    .botoncont1{
+        margin-left: -25%;
+        width: 200px;
+    }
+    #Presentacion2{
+        margin-left: 100%;
+        margin-left: -27%;
+    }
+}
+
+/*No puedo quitar el left en el qu*/
+
+.Presentacion{
+    margin-left: 13%;
+    width: auto;
+    min-width: 300px;
+    height: 45%;
+    position: relative;
+    left: 2%;
+    top: 15%;
+    padding: 1%;
+    background-color: rgb(211, 255, 255);
+    border: solid 3px;
+    border-color: rgb(98, 181, 184);
+    box-sizing: border-box;
+}
+
+.addopt{
+    position: relative;
+    width: 100%; height: 400px;
+
+    background-color: aliceblue;
+}
+
+.addopt .addoppt{
+    width: 90%;
+    height: 100%;
+}
+
+.imig1{
+    width: 40%;
+    height: auto;
+    border-radius: 5%;
+    left: 35%;
+    border: solid 4px;
+    border-color: rgb(35, 192, 184);
+    top: 10%;
+    position: relative;
+}
+
+
+.aboutpets1{
+    position: relative;
+    width: 100%; height: auto;
+    background-color: aliceblue ;
+    border-bottom: solid 1px;
+    border-color: rgb(185, 185, 185);
+}
+
+.AbouttPets1 #Adoptatumascota1 {
+    margin-left: 2%;
+    width: 98%;
+    height: 30%;
+    padding: 1%;
+    text-align: center;
+
+}
+
+
+/*section1*/
+
+.aboutpets{
+    position: relative;
+    width: 100%; height: auto;
+    background-color: rgb(234, 253, 255);
+    border-bottom: solid 1px;
+    border-color: rgb(185, 185, 185);
+    
+}
+
+.AbouttPets #Adoptatumascota {
+    margin-left: 2%;
+    width: 98%;
+    height: 30%;
+    padding: 1%;
+    text-align: center;
+
+}
+
+
+#Presentacion2{
+    width: 40%;
+    min-width: 400px;
+    height: 20%;
+    position: relative;
+    left: 2%;
+    margin-top: 2%;
+    padding: 1%;
+    background-color: rgb(228, 255, 254);
+    border: solid 3px;
+    border-color: rgb(98, 181, 184);
+    box-sizing: border-box;
+    left: 30%;
+}
+
+.botoncont1{
+    display: inline-block;
+    position: relative;
+    top: 2%;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 2% ;
+    left: 35%;
+}
+
+
+.bton3 {
+    display: inline-block;
+    font-size: 100%;
+    background-color: rgb(160, 231, 225);
+    color: rgb(0, 0, 0);
+    border: solid 2px;
+    border-color: darkslategrey;
+    padding: 1%;
+    left: 4%;
+    margin-top: 1%;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    min-width: 300px;
+    min-height: 100px;
+    height: 50%;
+
+}
+.bton3:hover{
+    background-color: rgba(106, 181, 190, 0.959);
+    color: rgb(252, 252, 252);
+}
+
+.centrarl{
+    margin: auto 10%;
+}
+.galerycont{
+    margin-top: 5%;
+    margin-bottom: 8%;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: rgb(193, 215, 216);
+    border-color: black;
+    border: solid 3px;
+    display: flex;
+    padding: 2%;
+}
+
+#imgestandar{
+    border: 1px solid;
+    border-color: rgb(10, 89, 126);
+    border-radius: 10%;
+    max-width: 25%;
+    max-height: 25%;
+    min-width: 10%;
+    min-height: 10%;
+    margin: 1%;
+    position: relative;
+    object-fit: cover;
+}
+
+.bton4 {
+    display: inline-block;
+    font-size: 100%;
+    background-color: rgb(160, 231, 225);
+    color: rgb(0, 0, 0);
+    border: solid 2px;
+    border-color: darkslategrey;
+    padding: 1%;
+    left: 4%;
+    margin-top: 1%;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    min-width: 300px;
+    min-height: 100px;
+    height: 50%;
+
+}
+.bton4:hover{
+    background-color: rgba(106, 181, 190, 0.959);
+    color: rgb(252, 252, 252);
+}
+
+.bton11{
+    display: inline-block;
+    font-size: 100%;
+    background-color: rgb(35, 109, 103);
+    color: rgb(255, 255, 255);
+    border: solid 2px;
+    border-color: rgb(31, 168, 168);
+    padding: 1%;
+    margin-left: 0%;
+    margin-top: 1%;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    min-height: 100px;
+    margin-top: 2%;
+    margin-left: 35%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+.bton11:hover{
+    color: rgb(3, 3, 3);
+    background-color: rgb(14, 71, 67);
+}
+
+
+
+/*Cosas para ver si vuelvo a implementar:
+
+    width: 300px;
+    height: 300px;
+    min-width: 50px;
+    min-height: 50px;
+
+#imgIndex {
+    position: sticky;
+    border: solid 2px;
+    border-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+}
+
+<img id="imgIndex" src="https://th.bing.com/th/id/R.03c3c3d1a5fa19a9b5a800d7c9178ab2?rik=gfaBK6tCYH%2bosA&riu=http%3a%2f%2fyesofcorsa.com%2fwp-content%2fuploads%2f2017%2f06%2fVeterinarian-Wallpaper-Download.jpg&ehk=BFyH2NxyXqjLw7xcj88ptFwlIc0bo6rXfT1FF%2bDzqRI%3d&risl=&pid=ImgRaw&r=0" title="Foto de veterinaria" alt="Foto De Veterinarios"> */
+
+

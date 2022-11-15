@@ -36,3 +36,17 @@ img {
 .btn:hover{
     background-color:#006075
 }
+
+#montoValid {
+    color: green;
+}
+
+#montoInvalid {
+    color: red;
+}
+
+#montoValid, #montoInvalid{
+    text-align: center;
+    display: none;
+}
+

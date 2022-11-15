@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="stylesheet" href="../assets/css/navbar.css">
-        <link rel="icon" type="image/x-icon" href="../assets/img/icon.png">
-    <title>Donaciones</title>
+    <link rel="stylesheet" href="../assets/css/perfil.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/icon.png">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <title>Agregar Animales</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#006075;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#006075;">
         <a class="navbar-brand" href="../index.html">Web Animales</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -64,36 +62,57 @@
 
 
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <div class="container d-flex flex-column justify-content-center align-items-center g-5 p-5">
-        <h1 class="p-2">Agradecimientos</h1>
-        <h4 class="p-2">¿Quieres apoyarnos y aparecer en la lista?</h4>
-        <div class="d-grid gap-2 d-md-block p-2">
-            <button class="btn btn-primary" style="background-color: #023B48;" type="button">Donar</button>
+    <main>
+    <div class="wrapper  mt-sm-5">
+        <h4 class="pb-4 border-bottom">Agregar Animales para adopción</h4>
+        <form name="formulario" id="formulario" action="../index.html" class="needs-validation" onsubmit="" method="post" novalidate>
+        <div class="py-2">
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="bg-light form-control" placeholder="Masita" name="nombre" required>
+                </div>
+                <div class="col-md-6 pt-md-0 pt-3">
+                    <label for="edad">Edad</label>
+                    <input name="edad" type="number" class="bg-light form-control" placeholder="12" MIN=1000000 MAX=99999999 required>
+                </div>
+                
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <label for="raza">Raza</label>
+                    <input type="text" class="bg-light form-control" placeholder="mestizo, nombre de raza" name="raza" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="raza">Foto del animal</label>
+                    <input type="file" class="bg-light form-control" placeholder="" name="foto" required>
+                </div>
+                
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <label for="tamaño">Tamaño</label>
+                    <select name="tamaño" id="tamaño" class="bg-light">
+                    <option value="1">Chico</option>
+                    <option value="2">Mediano</option>
+                    <option value="3">Grande</option>
+                    </select>
+                </div>
+                <div class="col-md-6 pt-md-0 pt-3">
+                    <label for="ciudad">Tipo</label>
+                    <input type="text" name="tipo" class="bg-light form-control" placeholder="Gato o perro" minlength="3" maxlength="20" required>
+                </div>
+                </div>
+            </div>
+            <div class="py-3 pb-4 border-bottom">
+                <button class="btn btn-primary mr-3">Agregar animal</button>
+                <span id="dinamic-text"></span>
+            </div>
+            </div>
         </div>
     </div>
-    <div class="container d-flex flex-column justify-content-center align-items-center">
-        <h1 style="color: #023B48;">Donadores</h1>
-        <ul class="list-group p-5">
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-            <li class="list-group-item">Martin Guzmán de La Fuente</li>
-        </ul>
-    </div class="container m-5 p-5">
+    </form>
+    </main>
     <br>
     <br><br><br><br><br>
     <footer id="footer-special" class="bg-light text-center text-white">
@@ -162,6 +181,11 @@
       </div>
       <!-- Copyright -->
   </footer>
-</body>
+  
+  <script src="../assets/js/adoptCuenta.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>

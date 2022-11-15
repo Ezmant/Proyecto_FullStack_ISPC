@@ -1,3 +1,0 @@
-#nombre, correo, telefono
-
-#getVeterinarios()
