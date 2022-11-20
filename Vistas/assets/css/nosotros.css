@@ -22,13 +22,13 @@ body {
 
 .map_section .form_container {
   position: relative;
-  width: 80%;
+  width: 70%;
   z-index: 9;
   min-width: 450px;
 }
 
 .map_section .form_container form {
-  background-color: rgba(249, 254, 255, 0.829);
+  background-color: rgba(46, 121, 136, 0.062);
   border: 2px solid #5c96a3 ;
   padding: 70px;
   margin-top: 60px;
@@ -62,4 +62,37 @@ body {
 .map_section .form_container button:hover {
   background-color: rgba(49, 128, 131, 0.89) ;
   color: #ffffff;
+}
+
+/*Plus*/
+
+.Info{
+  margin-top: 2%;
+  border-color: #81bcc9;
+  border: solid 3px;
+  
+  min-width: 440px;
+  background-color: rgba(173, 197, 202, 0.829);
+}
+
+.Info .aaa2{
+  color: #b8bdbe63;
+}
+
+.info1{
+  text-align: left;
+  width: auto;
+  height: auto;
+  color: #64a3b1;
+}
+
+#ubic{
+  color: #057492;
+}
+.Infocolor{
+  margin-top: 2%;
+  background-color: aliceblue;
+  border-radius: 1%;
+  border-color: #023b48;
+  border: solid 1px;
 }
