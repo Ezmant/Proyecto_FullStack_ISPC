@@ -1,0 +1,98 @@
+/*Estos estilos están ligados a la página de "nosotros" */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+}
+
+.div12 {
+  background-color: rgba(183, 250, 250, 0.747);
+  width: 800;
+  height: 400;
+}
+/*Template necesario y modificado------------------------------------*/
+
+.map_section {
+  position: relative;
+}
+
+.map_section #map {
+  position: absolute;
+}
+
+.map_section .form_container {
+  position: relative;
+  width: 70%;
+  z-index: 9;
+  min-width: 450px;
+}
+
+.map_section .form_container form {
+  background-color: rgba(46, 121, 136, 0.062);
+  border: 2px solid #5c96a3 ;
+  padding: 70px;
+  margin-top: 60px;
+  margin-left: 35px; 
+  margin-right: 35px;
+}
+.map_section .form_container input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #111111;
+  padding-top: 35px;
+  width: 100%;
+}
+
+.map_section .form_container input.message-box {
+  padding-top: 55px;
+}
+
+.map_section .form_container button {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #023b48;
+  border: 1px solid #023b48;
+  color: #fdfdfd;
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 65px;
+}
+
+.map_section .form_container button:hover {
+  background-color: rgba(49, 128, 131, 0.89) ;
+  color: #ffffff;
+}
+
+/*Plus*/
+
+.Info{
+  margin-top: 2%;
+  border-color: #81bcc9;
+  border: solid 3px;
+  
+  min-width: 440px;
+  background-color: rgba(173, 197, 202, 0.829);
+}
+
+.Info .aaa2{
+  color: #b8bdbe63;
+}
+
+.info1{
+  text-align: left;
+  width: auto;
+  height: auto;
+  color: #64a3b1;
+}
+
+#ubic{
+  color: #057492;
+}
+.Infocolor{
+  margin-top: 2%;
+  background-color: aliceblue;
+  border-radius: 1%;
+  border-color: #023b48;
+  border: solid 1px;
+}

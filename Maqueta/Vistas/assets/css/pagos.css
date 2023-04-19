@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    color:#023B48;
+}
+
+h3 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    color:#023B48;
+}
+
+img {
+    display: block;
+    margin: auto auto;
+}
+
+.container-sm {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: auto auto;
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    background-color:#023B48
+}
+.btn:hover{
+    background-color:#006075
+}
+
+#montoValid {
+    color: green;
+}
+
+#montoInvalid {
+    color: red;
+}
+
+#montoValid, #montoInvalid{
+    text-align: center;
+    display: none;
+}
+
