@@ -11,7 +11,7 @@
   <!--Port para que no se modifique el zoom en móviles-->
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-sclae=1.0, minimum-scale=1.0">
-  <title>Web De Animales</title>
+  <title>ASPRA - Adoptá, no compres</title>
   <link rel="stylesheet" href="../assets/css/nosotros.css">
   <link rel="stylesheet" href="../Vistas/assets/css/index.css">
   <script src="https://kit.fontawesome.com/32b882a6dd.js" crossorigin="anonymous"></script>
@@ -33,8 +33,6 @@
 <body>
 
   <header>
-
-
     <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#006075;">
       <img src="assets/img/ASPRA.png" width="20%" alt="...">
       <a class="navbar-brand" href="../Vistas/index.html"></a>
@@ -48,9 +46,6 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="../Vistas/pages/index.html">HOME<span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Vistas/pages/nosotros.html">NOSOTROS<span class="sr-only"></span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -78,22 +73,30 @@
               <a class="dropdown-item" href="./pages/donaciones.html">Donacion de Insumos</a>
             </div>
           </li>
-
-          <section class="login"></section>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fa-solid fa-user-plus fa-2xl" href="#" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="pruebamenu">
-              <a class="dropdown-item" href="./pages/registro.html">Crear Cuenta</a>
-              <a class="dropdown-item" href="./pages/inicioSesion.html">Iniciar sesión</a>
-              <a class="dropdown-item" href="./pages/perfil.html">Mi cuenta</a>
-            </div>
-
+          <li class="nav-item">
+            <a class="nav-link" href="../Vistas/nosotros.html">NOSOTROS<span class="sr-only"></span></a>
           </li>
-        </ul>
 
-        </section>
+          <section class="login">
+            <div class="IconsAccount">
+              <li class="nav-item dropdown-left"><i class="fa-solid fa-user-plus fa-2xl" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <p class="sesion">Sign in</p>
+                </i>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="estiloIcon">
+                  <li><a class="dropdown-item" href="./pages/inicioSesion.html">Iniciar sesión</a></li>
+                  <li><a class="dropdown-item" href="./pages/registro.html">Crear Cuenta</a></li>
+                  <li><a class="dropdown-item" href="./pages/perfil.html">Mi cuenta</a></li>
+                </ul>
+              </li>
+        </ul>
+      </div>
+
+
+
+      </ul>
+      </section>
+      </section>
       </div>
 
 
@@ -120,17 +123,17 @@
 
 
   <main>
-    <section class="Imagen">
+    <section class="adopta">
       <div class="container text-center">
         <div class="row align-items-start">
           <div class="col">
-            <h1 id="Adoptatumascota">
+            <h1 id="titulo">
               ADOPTA
             </h1>
             <h4 id="subtexto">
               Y SALVA UNA VIDA
             </h4>
-            <div class="botoncont">
+            <div class="boton">
               <a href="../Vistas/pages/adopcion.html">
                 <button class="bton">
                   Quiero Adoptar!
@@ -153,13 +156,8 @@
       </div>
     </section>
 
-    <!--Clases con los nombres de las clases de los compañeros, al igual que sus links-->
-
-
-
-
-    <section class="aboutpets">
-      <h1 id="especialistas">
+    <section class="especialistas">
+      <h1 id="specialists">
         ESPECIALISTAS
       </h1>
       <h3 id="Presentacion2">
@@ -168,7 +166,7 @@
       </h3>
 
       </div>
-      <div class="botoncont1">
+      <div class="boton1">
         <a href="./pages/veterinarios.html">
           <button class="bton3">
             Nuestros Veterinarios
@@ -202,8 +200,8 @@
     </section>
 
 
-    <section class="aboutpets1">
-      <div class="AbouttPets">
+    <section class="galeria">
+      <div class="galery">
         <h1 id="Adoptatumascota5">
           GALERIA
         </h1>
@@ -226,8 +224,8 @@
     </section>
 
 
-    <section class="aboutpets2">
-      <div class="AbouttPets1">
+    <section class="contacto">
+      <div class="contact">
         <h1 id="Adoptatumascota1">
           ¡CONTACTANOS!
         </h1>
@@ -254,14 +252,9 @@
         <div class="colum1">
           <h1>Mas información</h1>
 
-          <p>AS.PR.A es una organización sin fines de lucro liderada por un grupo de voluntarios que
-            buscan superar la
-            situación de sobrepoblación, abandono, crueldad e indiferencia que viven millones de animales en nuestro
-            país. Propiciamos una actitud de respeto hacia todas las especies, entendiendo que no son
-            “cosas” para ser
-            utilizadas por el ser humano. Rechazamos todo tipo de explotación animal, incluyendo su uso como vestimenta,
-            comida,
-            entretenimiento y experimentación.</p>
+          <p>P4P está compuesto por voluntarios que comparten el respeto por la vida de los animales y los consideran
+            sus iguales
+            siendo que estos tienen capacidad para sentir placer, alegría, dolor y sufrimiento.</p>
         </div>
 
         <div class="colum2">
@@ -281,30 +274,20 @@
           </div>
         </div>
         <!--COMIENZA SUSCRIBIRSE-->
-
-        <div class="colum3">
-          <section class="flex-container">
-            <div class="suscripcion">
-              <p>Ingrese su email para suscribirse</p>
-            </div>
-            <div class="subscribe">
-              <form method="POST" action="" accept-charset="UTF-8"><input name="_token" type="hidden"
-                  value="SwVm4IFHbJJKTDkaoV7oqKJ80aBo7JPMbfP1hxaq">
-                <input type="hidden" id="user_id" name="user_id" value="215" required="required">
-                <input type="hidden" id="name" name="name" value="newslatter" required="required">
-                <input type="hidden" id="message" name="message" value="newslatter" required="required">
-                <input type="hidden" name="type" value="subscribe" required="required">
-                <div class="input-group">
-                  <input type="email" class="form-control input-sm" id="email" placeholder="Ingrese su Email"
-                    name="email" value="" required="required">
-                  <button type="submit" class="btn btn-default1">Suscribite</button>
-                </div>
-            </div>
-            </form>
-
-          </section>
-        </div>
+        <section class="columnaMenu">
+          <div class="colum3">
+            <h4>Menú</h4>
+            <br>
+            <a href="/Vistas/index.html">Home</a>
+            <br>
+            <a href="/Vistas/pages/adopcion.html">Adopta</a>
+            <br>
+            <a href="/Vistas/pages/donaciones.html">Donaciones</a>
+            <br>
+            <a href="/Vistas/nosotros.html">Nosotros</a>
+        </section>
       </div>
+    </div>
     </div>
 
     <div class="lineaFooter">

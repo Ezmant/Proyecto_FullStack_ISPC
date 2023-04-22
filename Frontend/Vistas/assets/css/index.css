@@ -10,20 +10,7 @@ body {
   flex-direction: column;
 }
 
-#footer-special {
-  margin-top: auto;
-  width: 100%;
-}
-
-.botoncont {
-  display: inline-block;
-  position: relative;
-  top: 2%;
-  width: 100%;
-  height: 10%;
-  padding-top: 3%;
-  padding-right: 25%;
-}
+/*Ajustes Botones*/
 
 .bton {
   display: inline-block;
@@ -69,61 +56,6 @@ body {
   background-color: rgb(14, 71, 67);
 }
 
-.addopt #Adoptatumascota {
-  padding-left: 1%;
-  padding-top: 3%;
-}
-/*AJUSTES RESPONSIVE*/
-@media screen and (max-width: 600px) {
-  .addoppt {
-    text-align: left;
-    margin-left: -12%;
-  }
-  .Presentacion {
-    margin-left: 100%;
-    text-align: left;
-  }
-  .bton {
-    margin-left: -13%;
-    width: 200px;
-  }
-  .bton1 {
-    margin-left: 0%;
-    width: 200px;
-  }
-  .botoncont1 {
-    margin-left: -25%;
-    width: 200px;
-  }
-
-  .footerInfo {
-    flex-wrap: wrap;
-  }
-
-  .colum1 {
-    max-width: 100%;
-  }
-  .colum2,
-  .colum3 {
-    margin-top: 40px;
-  }
-}
-/*FIN AJUSTES RESPONSIVE*/
-
-/*No puedo quitar el left en el qu*/
-
-#Presentacion {
-  min-width: 300px;
-  background-color: rgba(172, 172, 172, 0.573);
-  border: solid 1px;
-  box-sizing: border-box;
-  margin-top: 50px;
-  font-family: "Bebas Neue", cursiva;
-  font-size: 250%;
-  border-radius: 50px;
-  text-align: center;
-}
-
 #Presentacion3 {
   min-width: 300px;
   background-color: rgba(172, 172, 172, 0.573);
@@ -136,17 +68,6 @@ body {
   text-align: center;
 }
 
-#Presentacion4 {
-  width: 40%;
-  min-width: 330px;
-  height: 20%;
-  margin-top: 4%;
-  padding: 1%;
-  background-color: rgba(82, 82, 82, 0.264);
-  border-radius: 20px;
-  box-sizing: border-box;
-}
-
 #texto {
   font-family: "Amatic SC", cursive;
   font-size: 220%;
@@ -154,34 +75,6 @@ body {
   text-align: center;
   color: #c7c7c7;
   background-color: rgba(82, 82, 82, 0.487);
-}
-
-.addopt {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: rgb(255, 255, 255);
-  background-image: url(/Vistas/assets/img/adopcion.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.colum1 {
-  max-width: 50%;
-  max-height: 100%;
-}
-.colum2 {
-  max-width: 50%;
-  max-height: 100%;
-}
-
-.addopt .addoppt {
-  width: 90%;
-  height: 100%;
-}
-
-.addopt h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .imig1 {
@@ -195,7 +88,7 @@ body {
   position: relative;
 }
 
-.aboutpets1 {
+.galeria {
   position: relative;
   width: 100%;
   height: auto;
@@ -206,7 +99,8 @@ body {
   background-size: cover;
   background-position: center;
 }
-.Imagen {
+/*Ajustes Seccion Adopta*/
+.adopta {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -215,13 +109,53 @@ body {
   background-size: cover;
   background-position: center;
 }
-.AbouttPets1 #Adoptatumascota1 {
+
+#titulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 500%;
+  font-weight: 900;
+  color: #ffffff;
+  padding-top: 10%;
+}
+
+#subtexto {
+  font-family: "Raleway", sans-serif;
+  color: #dbdbdbc8;
+  margin-bottom: 10%;
+}
+
+.boton {
+  display: inline-block;
+  position: relative;
+  top: 2%;
+  width: 100%;
+  height: 10%;
+  padding-top: 3%;
+  padding-right: 25%;
+}
+
+#Presentacion {
+  min-width: 300px;
+  background-color: rgba(172, 172, 172, 0.573);
+  border: solid 1px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  font-family: "Bebas Neue", cursiva;
+  font-size: 250%;
+  border-radius: 50px;
+  text-align: center;
+}
+
+/*Fin Ajustes Seccion Adopta*/
+
+.contact #Adoptatumascota1 {
   margin-left: 2%;
   width: 98%;
   height: 30%;
   padding: 1%;
   text-align: center;
 }
+/*Ajustes Seccion salvaVidas*/
 
 .salvaVidas {
   position: relative;
@@ -233,9 +167,57 @@ body {
   background-image: url(/Vistas/assets/img/adoptame.jpg);
   background-size: cover;
 }
-/*section1*/
 
-.aboutpets {
+#Adoptatumascota4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 400%;
+  font-weight: 900;
+  color: #2e2c2c;
+  padding-top: 3%;
+  padding-right: 60%;
+  text-align: center;
+  margin-top: 20%;
+}
+
+#Presentacion4 {
+  width: 40%;
+  min-width: 330px;
+  height: 20%;
+  margin-top: 4%;
+  padding: 1%;
+  background-color: rgba(82, 82, 82, 0.264);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.bton4 {
+  display: inline-block;
+  font-size: 100%;
+  background-color: rgb(160, 231, 225);
+  color: rgb(56, 56, 56);
+  border: solid 2px;
+  border-color: darkslategrey;
+  border-radius: 30px;
+  padding: 1%;
+  left: 13%;
+  margin-top: 60%;
+  position: relative;
+  text-align: center;
+  width: 36%;
+  min-height: 60px;
+  height: 50%;
+  cursor: pointer;
+}
+
+.bton4:hover {
+  background-color: #750000;
+  color: rgb(252, 252, 252);
+}
+
+/*Fin Ajustes Seccion salvaVidas*/
+
+/*Ajustes Seccion Especialistas*/
+.especialistas {
   position: relative;
   width: 100%;
   height: auto;
@@ -247,7 +229,66 @@ body {
   background-position: center;
 }
 
-.aboutpets2 {
+#specialists {
+  font-family: "Raleway", sans-serif;
+  font-size: 400%;
+  font-weight: 900;
+  color: #2e2c2c;
+  padding-top: 5%;
+  padding-right: 6%;
+  text-align: center;
+}
+
+#Presentacion2 {
+  width: 40%;
+  min-width: 400px;
+  height: 20%;
+  position: relative;
+  left: 2%;
+  margin-top: 2%;
+  padding: 1%;
+  background-color: rgba(82, 82, 82, 0.485);
+  border-radius: 20px;
+  box-sizing: border-box;
+  left: 30%;
+}
+
+.boton1 {
+  display: inline-block;
+  position: relative;
+  top: 2%;
+  width: 50%;
+  height: 50%;
+  padding-bottom: 2%;
+  left: 35%;
+}
+
+.bton3 {
+  display: inline-block;
+  font-size: 100%;
+  background-color: rgb(160, 231, 225);
+  color: rgb(56, 56, 56);
+  border: solid 2px;
+  border-color: darkslategrey;
+  border-radius: 30px;
+  padding: 1%;
+  left: 13%;
+  margin-top: 10%;
+  position: relative;
+  text-align: center;
+  width: 36%;
+  min-height: 40px;
+  height: 50%;
+  cursor: pointer;
+}
+
+.bton3:hover {
+  background-color: #006075;
+  color: rgb(252, 252, 252);
+}
+
+/*Fin Ajustes Seccion Especialistas*/
+.contacto {
   position: relative;
   width: 100%;
   height: auto;
@@ -257,24 +298,6 @@ body {
   background-image: url(/Vistas/assets/img/contacto.jpg);
   background-size: cover;
   background-position: center;
-}
-
-#Adoptatumascota {
-  font-family: "Raleway", sans-serif;
-  font-size: 500%;
-  font-weight: 900;
-  color: #ffffff;
-  padding-top: 10%;
-}
-
-#especialistas {
-  font-family: "Raleway", sans-serif;
-  font-size: 400%;
-  font-weight: 900;
-  color: #2e2c2c;
-  padding-top: 5%;
-  padding-right: 6%;
-  text-align: center;
 }
 
 #Adoptatumascota1 {
@@ -310,17 +333,6 @@ body {
   text-align: center;
 }
 
-#Adoptatumascota4 {
-  font-family: "Raleway", sans-serif;
-  font-size: 400%;
-  font-weight: 900;
-  color: #2e2c2c;
-  padding-top: 3%;
-  padding-right: 60%;
-  text-align: center;
-  margin-top: 20%;
-}
-
 #Adoptatumascota5 {
   font-family: "Raleway", sans-serif;
   font-size: 500%;
@@ -330,32 +342,12 @@ body {
   padding-left: 3%;
 }
 
-#subtexto {
-  font-family: "Raleway", sans-serif;
-  color: #dbdbdbc8;
-  margin-bottom: 10%;
-}
-
-.AbouttPets #Adoptatumascota {
+.galery #Adoptatumascota {
   margin-left: 2%;
   width: 98%;
   height: 30%;
   padding: 1%;
   text-align: center;
-}
-
-#Presentacion2 {
-  width: 40%;
-  min-width: 400px;
-  height: 20%;
-  position: relative;
-  left: 2%;
-  margin-top: 2%;
-  padding: 1%;
-  background-color: rgba(82, 82, 82, 0.485);
-  border-radius: 20px;
-  box-sizing: border-box;
-  left: 30%;
 }
 
 #Presentacion5 {
@@ -368,64 +360,6 @@ body {
   box-sizing: border-box;
   text-align: center;
   font-size: 200%;
-}
-
-.botoncont1 {
-  display: inline-block;
-  position: relative;
-  top: 2%;
-  width: 50%;
-  height: 50%;
-  padding-bottom: 2%;
-  left: 35%;
-}
-
-.bton3 {
-  display: inline-block;
-  font-size: 100%;
-  background-color: rgb(160, 231, 225);
-  color: rgb(56, 56, 56);
-  border: solid 2px;
-  border-color: darkslategrey;
-  border-radius: 30px;
-  padding: 1%;
-  left: 13%;
-  margin-top: 10%;
-  position: relative;
-  text-align: center;
-  width: 36%;
-  min-height: 40px;
-  height: 50%;
-  cursor: pointer;
-}
-
-.bton3:hover {
-  background-color: #006075;
-  color: rgb(252, 252, 252);
-}
-
-.bton4 {
-  display: inline-block;
-  font-size: 100%;
-  background-color: rgb(160, 231, 225);
-  color: rgb(56, 56, 56);
-  border: solid 2px;
-  border-color: darkslategrey;
-  border-radius: 30px;
-  padding: 1%;
-  left: 13%;
-  margin-top: 60%;
-  position: relative;
-  text-align: center;
-  width: 36%;
-  min-height: 60px;
-  height: 50%;
-  cursor: pointer;
-}
-
-.bton4:hover {
-  background-color: #750000;
-  color: rgb(252, 252, 252);
 }
 
 .centrarl {
@@ -483,15 +417,13 @@ body {
 /*Ajustes NavBar*/
 
 .login {
-  margin-left: 0;
+  margin-left: 135%;
   margin-right: 0;
 }
 
-.fa-solid.fa-user-plus.fa-2xl {
-  margin-top: 10%;
-  margin-left: 600%;
-}
+/* Fin Ajustes NavBar*/
 
+/*Ajustes Menu Desplegable*/
 #pruebamenu {
   background-color: rgb(160, 231, 225);
   margin-left: 430%;
@@ -510,7 +442,18 @@ body {
   background-color: #006075;
 }
 
-/* FOOTER */
+#estiloIcon {
+  background-color: rgb(160, 231, 225);
+  margin-top: -2%;
+  margin-left: 85%;
+}
+#estiloIcon a:hover {
+  color: #cacaca;
+  background-color: #006075;
+}
+/* Fin Ajustes Menu Desplegable*/
+
+/* Ajustes Footer */
 
 footer {
   width: 100%;
@@ -557,6 +500,7 @@ footer {
   padding: 10px;
   margin-top: 20px;
   display: inline-block;
+  margin-left: 7%;
 }
 
 i.fa-brands.fa-facebook.fa-2xl {
@@ -579,14 +523,6 @@ i.fa-brands.fa-whatsapp.fa-2xl {
 }
 i.fa-brands.fa-whatsapp.fa-2xl:hover {
   color: rgb(0, 200, 20);
-}
-
-i.fa-solid.fa-user.fa-2xl:hover {
-  color: rgb(0, 40, 200);
-}
-
-i.fa-solid.fa-user-plus:hover {
-  color: rgb(0, 40, 200);
 }
 
 .colum3 {
@@ -617,9 +553,123 @@ i.fa-solid.fa-user-plus:hover {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px;
 }
 
 .copyright {
   color: #c7c7c7;
 }
+
+/*Fin Ajustes Footer*/
+
+/* Ajustes Dropdown Menus */
+.navbar-nav :hover .dropdown-menu {
+  display: block;
+}
+
+.sesion {
+  font-size: 8px;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-user-plus {
+  color: rgb(239, 239, 239);
+  cursor: pointer;
+  padding-left: 10%;
+  margin-top: 50%;
+}
+
+i.fa-solid.fa-user-plus:hover {
+  color: rgb(160, 231, 225);
+}
+
+.nav-link.dropdown-toggle::after {
+  content: none;
+}
+
+.colum3 a {
+  color: #ffffff;
+}
+
+.colum3 a:hover {
+  color: #2e2c2c;
+  text-decoration: none;
+}
+
+/*AJUSTES RESPONSIVE*/
+@media screen and (max-width: 600px) {
+  .Presentacion {
+    margin-left: 100%;
+    text-align: left;
+  }
+
+  #texto {
+    margin-top: 20%;
+  }
+
+  .bton {
+    margin-left: -13%;
+    width: 200px;
+  }
+  .bton1 {
+    margin-left: 0%;
+    width: 200px;
+  }
+
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+
+  #specialists {
+    font-size: 300%;
+    font-weight: 900;
+  }
+
+  #Presentacion2 {
+    font-size: 100%;
+    margin-left: -25%;
+  }
+
+  .bton3 {
+    font-size: 70%;
+  }
+
+  .bton4 {
+    display: inline-block;
+    font-size: 70%;
+    background-color: rgb(160, 231, 225);
+    color: rgb(56, 56, 56);
+    border: solid 2px;
+    border-color: darkslategrey;
+    border-radius: 30px;
+    padding-left: 20%;
+    padding-right: 70%;
+    left: 10%;
+    margin-top: 60%;
+    position: relative;
+    text-align: center;
+    width: 36%;
+    min-height: 60px;
+    height: 50%;
+    cursor: pointer;
+  }
+  .contact {
+    font-size: 50%;
+    font-weight: 100;
+  }
+
+  .contact h3 {
+    font-size: 300%;
+    margin-left: -20%;
+  }
+}
+/*FIN AJUSTES RESPONSIVE*/
