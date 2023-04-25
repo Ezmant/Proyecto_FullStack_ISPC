@@ -95,7 +95,7 @@ body {
   background-color: aliceblue;
   border-bottom: solid 1px;
   border-color: rgb(185, 185, 185);
-  background-image: url(/Vistas/assets/img/fondo.jpg);
+  background-image: url(/assets/img/fondo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -105,7 +105,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 400px;
-  background-image: url(/Vistas/assets/img/adopcion.jpg);
+  background-image: url(/assets/img/adopcion.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -164,7 +164,7 @@ body {
   background-color: aliceblue;
   border-bottom: solid 1px;
   border-color: rgb(185, 185, 185);
-  background-image: url(/Vistas/assets/img/adoptame.jpg);
+  background-image: url(/assets/img/adoptame.jpg);
   background-size: cover;
 }
 
@@ -224,7 +224,7 @@ body {
   background-color: rgb(234, 253, 255);
   border-bottom: solid 1px;
   border-color: rgb(185, 185, 185);
-  background-image: url(/Vistas/assets/img/veterinarios.jpg);
+  background-image: url(/assets/img/veterinarios.png);
   background-size: cover;
   background-position: center;
 }
@@ -295,7 +295,7 @@ body {
   background-color: rgb(234, 253, 255);
   border-bottom: solid 1px;
   border-color: rgb(185, 185, 185);
-  background-image: url(/Vistas/assets/img/contacto.jpg);
+  background-image: url(/assets/img/contacto.jpg);
   background-size: cover;
   background-position: center;
 }
