@@ -10,11 +10,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 import { PetFriendlyComponent } from './pages/pet-friendly/pet-friendly.component';
+import { VeterinariosComponent } from './pages/veterinarios/veterinarios.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'petFriendly', component: PetFriendlyComponent },
+  { path: 'veterinarios', component: VeterinariosComponent },
 ];
 
 @NgModule({
