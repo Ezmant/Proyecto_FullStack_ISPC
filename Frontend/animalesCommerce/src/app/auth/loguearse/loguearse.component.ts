@@ -22,7 +22,7 @@ export class LoguearseComponent {
   }
 
   validarForm(){
-    if (this.loguearse.value.email == "" && this.loguearse.value.password == ""){
+    if ((this.loguearse.value.email == "" || !this.loguearse.value.email?.includes('@') || !this.loguearse.value.email?.includes('.')) && this.loguearse.value.password == "") {
       this.invalidEmail = true
       this.invalidPass = true
       this.formValid = false
