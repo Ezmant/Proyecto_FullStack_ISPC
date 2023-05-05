@@ -4,9 +4,11 @@ import { AgradecimientosComponent } from './agradecimientos/agradecimientos.comp
 
 
 
+
 @NgModule({
   declarations: [
-    AgradecimientosComponent
+    AgradecimientosComponent,
+    
   ],
   imports: [
     CommonModule

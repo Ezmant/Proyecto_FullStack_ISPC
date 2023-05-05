@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 import { AgradecimientosComponent } from './pages/agradecimientos/agradecimientos.component';
+import { ReportarComponent } from './pages/reportar/reportar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,9 +27,11 @@ const appRoutes: Routes = [
     ContactoComponent,
     HomeComponent,
     AgradecimientosComponent,
+    ReportarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes),ReactiveFormsModule,],
   providers: [],
   bootstrap: [AppComponent],
+  
 })
 export class AppModule {}
