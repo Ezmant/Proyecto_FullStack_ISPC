@@ -9,6 +9,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
+import { AgradecimientosComponent } from './pages/agradecimientos/agradecimientos.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     NosotrosComponent,
     ContactoComponent,
     HomeComponent,
+    AgradecimientosComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
