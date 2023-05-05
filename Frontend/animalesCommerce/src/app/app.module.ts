@@ -13,6 +13,7 @@ import { Routes } from '@angular/router';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'nosotros', component: NosotrosComponent },
+  { path: 'contacto', component: ContactoComponent },
 ];
 
 @NgModule({
