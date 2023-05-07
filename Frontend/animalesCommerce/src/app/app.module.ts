@@ -9,10 +9,17 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
+import { PetFriendlyComponent } from './pages/pet-friendly/pet-friendly.component';
+import { VeterinariosComponent } from './pages/veterinarios/veterinarios.component';
+import { LoguearseComponent } from './auth/loguearse/loguearse.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'nosotros', component: NosotrosComponent },
+  { path: 'petFriendly', component: PetFriendlyComponent },
+  { path: 'veterinarios', component: VeterinariosComponent },
+  { path: 'loguearse', component: LoguearseComponent },
 ];
 
 @NgModule({
@@ -23,8 +30,11 @@ const appRoutes: Routes = [
     NosotrosComponent,
     ContactoComponent,
     HomeComponent,
+    PetFriendlyComponent,
+    VeterinariosComponent,
+    LoguearseComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
