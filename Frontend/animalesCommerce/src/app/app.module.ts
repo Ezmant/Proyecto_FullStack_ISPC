@@ -9,6 +9,10 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
+import { RegistrarseComponent } from './auth/registrarse/registrarse.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,8 +27,9 @@ const appRoutes: Routes = [
     NosotrosComponent,
     ContactoComponent,
     HomeComponent,
+    RegistrarseComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule, RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent],
 })
