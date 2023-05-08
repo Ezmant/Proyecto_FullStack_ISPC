@@ -1,0 +1,10 @@
+<div class="cart">
+    <h2>Carrito de compras</h2>
+    <ul>
+        <li *ngFor="let item of cartItems">
+            {{item.name}} - {{item.price | currency}}
+            <button (click)="removeFromCart(item)">Eliminar</button>
+        </li>
+    </ul>
+    <p>Total: {{getTotal() | currency}}</p>
+</div>
