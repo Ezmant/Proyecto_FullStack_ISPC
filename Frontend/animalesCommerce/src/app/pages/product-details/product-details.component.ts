@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+/* import { Component, OnInit, Input } from '@angular/core';
 
 export interface Product {
   id: number;
@@ -26,3 +26,4 @@ export class ProductDetailsComponent implements OnInit {
 
 }
 
+ */
