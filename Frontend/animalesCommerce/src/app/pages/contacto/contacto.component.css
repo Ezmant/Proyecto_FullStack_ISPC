@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.body-special {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*Ajustes NavBar*/
+
+.login {
+  margin-left: 135%;
+  margin-right: 0;
+}
+
+/* Fin Ajustes NavBar*/
+
+/* Ajustes Dropdown Menus */
+.navbar-nav :hover .dropdown-menu {
+  display: block;
+}
+
+.sesion {
+  font-size: 8px;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-user-plus {
+  color: rgb(239, 239, 239);
+  cursor: pointer;
+  padding-left: 10%;
+  margin-top: 50%;
+}
+
+i.fa-solid.fa-user-plus:hover {
+  color: rgb(160, 231, 225);
+}
+
+.nav-link.dropdown-toggle::after {
+  content: none;
+}
+
+.colum3 a {
+  color: #ffffff;
+}
+
+.colum3 a:hover {
+  color: #2e2c2c;
+  text-decoration: none;
+}
+
+.bodyNosotros {
+  padding: 3%;
+  background-color: #006075be;
+}
+
+.bodyNosotros h4 {
+  font-size: 200%;
+  padding-top: 10%;
+  font-weight: 700;
+}
+
+.bodyNosotros p {
+  padding-bottom: 10%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nosotros {
+  background-color: #a6a6a6be;
+}
+
+/*AJUSTES RESPONSIVE*/
+@media screen and (max-width: 600px) {
+  img {
+    width: 400px;
+    height: 250px;
+  }
+  .bodyNosotros h4 {
+    font-size: 150%;
+    padding-top: 10%;
+    font-weight: 700;
+  }
+}
+
+/* FORMULARIO DE CONTACTO BOOTSTRAP */
+.container.text-center {
+  background-color: #006075be;
+}
+.contact-clean {
+  background: white;
+}
+
+.maps {
+  padding-top: 10px;
+  background-color: #006075be;
+}
+
+.maps p {
+  font-size: 17px;
+  background-color: #006075be;
+}
+.contact-clean h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 36px;
+  color: inherit;
+}
+
+.contact-clean .form-group:last-child {
+  margin-bottom: 5px;
+}
+
+.contact-clean form .form-control {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+  outline: none;
+  color: inherit;
+  padding-left: 12px;
+  height: 42px;
+}
+
+.contact-clean form .form-control:focus {
+  border: 1px solid #b2b2b2;
+}
+
+.contact-clean form textarea.form-control {
+  min-height: 100px;
+  max-height: 260px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
+.contact-clean form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none !important;
+}
+
+.contact-clean form .btn:hover {
+  opacity: 1;
+}
+
+.contact-clean form .btn:active {
+  transform: translateY(1px);
+}
+
+.contact-clean form .btn-primary {
+  background-color: #055ada !important;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.Icons {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: small;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.advertencias {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  color: #eb2424;
+  padding-top: 1px;
+  font-size: medium;
+}
+
+.contact {
+  background-color: #006075be;
+}
+
+.exito {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  color: #338d09;
+  padding-top: 1px;
+  font-size: medium;
+}
