@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.body-special {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*Ajustes NavBar*/
+
+.login {
+  margin-left: 135%;
+  margin-right: 0;
+}
+
+/* Fin Ajustes NavBar*/
+
+/* Ajustes Dropdown Menus */
+.navbar-nav :hover .dropdown-menu {
+  display: block;
+}
+
+.sesion {
+  font-size: 8px;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-user-plus {
+  color: rgb(239, 239, 239);
+  cursor: pointer;
+  padding-left: 10%;
+  margin-top: 50%;
+}
+
+i.fa-solid.fa-user-plus:hover {
+  color: rgb(160, 231, 225);
+}
+
+.nav-link.dropdown-toggle::after {
+  content: none;
+}
+
+.colum3 a {
+  color: #ffffff;
+}
+
+.colum3 a:hover {
+  color: #2e2c2c;
+  text-decoration: none;
+}
+
+.bodyNosotros {
+  padding: 3%;
+  background-color: #006075be;
+}
+
+.bodyNosotros h4 {
+  font-size: 200%;
+  padding-top: 10%;
+  font-weight: 700;
+}
+
+.bodyNosotros p {
+  padding-bottom: 10%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nosotros {
+  background-color: #a6a6a6be;
+}
+
+/*AJUSTES RESPONSIVE*/
+@media screen and (max-width: 600px) {
+  img {
+    width: 400px;
+    height: 250px;
+  }
+  .bodyNosotros h4 {
+    font-size: 150%;
+    padding-top: 10%;
+    font-weight: 700;
+  }
+}
