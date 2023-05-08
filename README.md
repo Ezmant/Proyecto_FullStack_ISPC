@@ -61,8 +61,7 @@
   - [Mattos Nicolas](https://github.com/NicolasMattos03)
   - [Sanabria Jose Maria](https://github.com/josemaria-s)
   - [Moreno Alejandro](https://github.com/MoCAlejandro)
-  - [Ruiz Celeste](https://github.com/Cele23)
-  - [Sobrero Claudia](https://github.com/csobrero874)
+ 
 
 
 </section>
