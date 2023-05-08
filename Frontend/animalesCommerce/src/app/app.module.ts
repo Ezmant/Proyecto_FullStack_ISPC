@@ -12,8 +12,6 @@ import { Routes } from '@angular/router';
 import { PetFriendlyComponent } from './pages/pet-friendly/pet-friendly.component';
 import { VeterinariosComponent } from './pages/veterinarios/veterinarios.component';
 import { LoguearseComponent } from './auth/loguearse/loguearse.component';
-import { AgradecimientosComponent } from './pages/agradecimientos/agradecimientos.component';
-import { ReportarComponent } from './pages/reportar/reportar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
@@ -22,8 +20,6 @@ const appRoutes: Routes = [
   { path: 'petFriendly', component: PetFriendlyComponent },
   { path: 'veterinarios', component: VeterinariosComponent },
   { path: 'loguearse', component: LoguearseComponent },
-  { path: 'agradecimientos', component: AgradecimientosComponent },
-  { path: 'reportar', component: ReportarComponent },
 ];
 
 @NgModule({
@@ -37,8 +33,6 @@ const appRoutes: Routes = [
     PetFriendlyComponent,
     VeterinariosComponent,
     LoguearseComponent,
-    AgradecimientosComponent,
-    ReportarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule],
   providers: [],
