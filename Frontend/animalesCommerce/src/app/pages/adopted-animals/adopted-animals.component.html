@@ -1,0 +1,23 @@
+<div class="adopted-animals">
+    <h2>Animales adoptados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Tipo de animal</th>
+                <th>Tamaño</th>
+                <th>Raza</th>
+                <th>Fecha de adopción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let animal of adoptedAnimals">
+                <td>{{ animal.name }}</td>
+                <td>{{ animal.animalType }}</td>
+                <td>{{ animal.size }}</td>
+                <td>{{ animal.breed }}</td>
+                <td>{{ animal.adoptionDate | date }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
