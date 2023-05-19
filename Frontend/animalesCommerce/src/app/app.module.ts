@@ -9,9 +9,10 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
-import { AgradecimientosComponent } from './pages/agradecimientos/agradecimientos.component';
+//import { AgradecimientosComponent } from './pages/agradecimientos/agradecimientos.component';
 import { ReportarComponent } from './pages/reportar/reportar.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,10 +27,10 @@ const appRoutes: Routes = [
     NosotrosComponent,
     ContactoComponent,
     HomeComponent,
-    AgradecimientosComponent,
+    //AgradecimientosComponent,
     ReportarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes),ReactiveFormsModule,],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes),ReactiveFormsModule,HttpClientModule,],
   providers: [],
   bootstrap: [AppComponent],
   
