@@ -1,0 +1,85 @@
+{
+  "Refuguios": [
+    {
+      "nombre": "Amor Canino",
+      "telefono": "111333555",
+      "email": "contacto@amorcanino.com",
+      "direccion": "Avenida Central 456",
+      "ciudad": "San Nicolás de los Arroyos",
+      "provincia": "Buenos Aires"
+    },
+    {
+      "nombre": "Refugio Hogar Animal",
+      "telefono": "333111888",
+      "email": "info@hogaranimal.org",
+      "direccion": "Calle Principal 123",
+      "ciudad": "San Salvador de Jujuy",
+      "provincia": "Jujuy"
+    },
+    {
+      "nombre": "Patas Callejeras",
+      "telefono": "888555222",
+      "email": "contacto@patascallejeras.com",
+      "direccion": "Avenida Libertador 789",
+      "ciudad": "Santa Fe",
+      "provincia": "Santa Fe"
+    },
+    {
+      "nombre": "Refugio Animalitos en Apuros",
+      "telefono": "777333111",
+      "email": "info@animalesenapuros.org",
+      "direccion": "Calle Principal 456",
+      "ciudad": "San Luis",
+      "provincia": "San Luis"
+    },
+    {
+      "nombre": "Hogar de Gatos Felices",
+      "telefono": "222888555",
+      "email": "contacto@gatosfelices.com",
+      "direccion": "Avenida Central 123",
+      "ciudad": "La Rioja",
+      "provincia": "La Rioja"
+    },
+    {
+      "nombre": "Refugio Amigos del Bosque",
+      "telefono": "999555111",
+      "email": "info@amigosdelbosque.org",
+      "direccion": "Calle Principal 789",
+      "ciudad": "San Carlos de Bariloche",
+      "provincia": "Río Negro"
+    },
+    {
+      "nombre": "Perritos Felices",
+      "telefono": "111333555",
+      "email": "contacto@perritosfelices.com",
+      "direccion": "Avenida Libertad 456",
+      "ciudad": "Santa Rosa",
+      "provincia": "La Pampa"
+    },
+    {
+      "nombre": "Refugio Animalitos Sin Hogar",
+      "telefono": "555777333",
+      "email": "info@animalitossinhogar.org",
+      "direccion": "Calle Principal 123",
+      "ciudad": "San Miguel de Tucumán",
+      "provincia": "Tucumán"
+    },
+    {
+      "nombre": "Hogar Canino Esperanza",
+      "telefono": "888222555",
+      "email": "contacto@hogaresperanza.com",
+      "direccion": "Avenida Central 789",
+      "ciudad": "Bahía Blanca",
+      "provincia": "Buenos Aires"
+    },
+    {
+        "nombre": "Refugio Peludos del Sur",
+        "telefono": "444777999",
+        "email": "info@peludosdelsur.org",
+        "direccion": "Calle Principal 456",
+        "ciudad": "Neuquén",
+        "provincia": "Neuquén"      
+    }
+    
+  ]
+}

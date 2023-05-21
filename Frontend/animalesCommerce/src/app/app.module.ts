@@ -19,6 +19,7 @@ import { RegistrarseComponent } from './auth/registrarse/registrarse.component';
 import { FinalizarAdopcionComponent } from './pages/finalizar-adopcion/finalizar-adopcion.component';
 import { ListaAdopcionComponent } from './pages/lista-adopcion/lista-adopcion.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
 /* import { ProductDetailsComponent} from './pages/product-details/product-details.component'; */
 
 const appRoutes: Routes = [
@@ -55,7 +56,7 @@ const appRoutes: Routes = [
     CartComponent,
 
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
