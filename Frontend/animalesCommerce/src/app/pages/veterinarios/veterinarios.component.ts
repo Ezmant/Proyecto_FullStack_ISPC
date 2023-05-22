@@ -13,10 +13,10 @@ export class VeterinariosComponent implements OnInit{
   constructor(private listVet:ListadoVeterinariosService) { }
 
   ngOnInit(): void {
-    this.lista = this.listaVeterinarios();
+    this.listaVeterinarios();
   }
 
-  listaVeterinarios():any {
+  listaVeterinarios():void {
     this.listVet.verVeterinarios().subscribe({
       next: (response) => {
         this.lista = response
