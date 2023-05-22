@@ -1,9 +1,9 @@
 {
-  "veterinarios": [
-    {"nombre":"Martin Guzman", "email":"MGuzman@gmail.com", "telefono":"1565458789"},
-    {"nombre":"Maria Lopez", "email":"MLopez@gmail.com", "telefono":"260425624"},
-    {"nombre":"Roberto Giordano", "email":"RGiordano@gmail.com", "telefono":"145815656"},
-    {"nombre":"Julian Cazal", "email":"JCazal@gmail.com", "telefono":"354222256"},
-    {"nombre":"Juliana Santilla", "email":"JSantillan@gmail.com", "telefono":"1152565538"}
-]
+  "contacto": [
+    {
+      "horario": "09:00 a 14:00 / 17:00 a 20:00",
+      "celular": 3516110625,
+      "email": "aspraproteccionanimal@gmail.com"
+    }
+  ]
 }

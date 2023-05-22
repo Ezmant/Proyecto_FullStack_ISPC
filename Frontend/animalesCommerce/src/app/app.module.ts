@@ -19,8 +19,8 @@ import { RegistrarseComponent } from './auth/registrarse/registrarse.component';
 import { FinalizarAdopcionComponent } from './pages/finalizar-adopcion/finalizar-adopcion.component';
 import { ListaAdopcionComponent } from './pages/lista-adopcion/lista-adopcion.component';
 import { CartComponent } from './pages/cart/cart.component';
-import { HttpClientModule } from '@angular/common/http';
 /* import { ProductDetailsComponent} from './pages/product-details/product-details.component'; */
+import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -54,9 +54,14 @@ const appRoutes: Routes = [
     FinalizarAdopcionComponent,
     ListaAdopcionComponent,
     CartComponent,
-
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule,
+    HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
