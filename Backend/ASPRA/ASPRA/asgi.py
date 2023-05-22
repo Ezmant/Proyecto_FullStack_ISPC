@@ -1,5 +1,5 @@
 """
-ASGI config for abm_ispc project.
+ASGI config for ASPRA project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'abm_ispc.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ASPRA.settings')
 
 application = get_asgi_application()
