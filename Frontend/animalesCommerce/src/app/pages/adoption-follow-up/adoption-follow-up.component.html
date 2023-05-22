@@ -1,0 +1,8 @@
+<h2>Seguimiento de adopciones</h2>
+<ul>
+    <li *ngFor="let adoption of adoptions">
+        ID de adopción: {{adoption.id}} - ID de producto: {{adoption.productId}}
+        <br>
+        Fecha de adopción: {{adoption.adoptionDate}} - Fecha de seguimiento: {{adoption.followUpDate}}
+    </li>
+</ul>
