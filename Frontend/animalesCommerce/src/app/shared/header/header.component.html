@@ -19,13 +19,13 @@
             SERVICIOS
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="estiloMenu">
-            <a class="dropdown-item" href="./pages/adopcion.html">Adoptar</a>
-            <a class="dropdown-item" href="./pages/reporte.html">Reportar Animal</a>
-            <a class="dropdown-item" href="./pages/Seguimiento de animales.html">Seguimiento de animales</a>
+            <a class="dropdown-item" routerLink="/listaAdopcion">Adoptar</a>
+            <a class="dropdown-item" routerLink="/reportar">Reportar Animal</a>
+            <!-- <a class="dropdown-item" href="./pages/Seguimiento de animales.html">Seguimiento de animales</a> -->
             <!-- <div class="dropdown-divider"></div> -->
 
-            <a class="dropdown-item" href="./pages/veterinarios.html">Veterinarios</a>
-            <a class="dropdown-item" href="./pages/petFriendly.html">Lugares petFriendly</a>
+            <a class="dropdown-item" routerLink="/veterinarios">Veterinarios</a>
+            <a class="dropdown-item" routerLink="/petFriendly">Lugares petFriendly</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -34,13 +34,19 @@
             DONACIONES
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="estiloMenu">
-            <a class="dropdown-item" href="./pages/metodoPago.html">Aporte Economicos
-            </a>
-            <a class="dropdown-item" href="./pages/donaciones.html">Donacion de Insumos</a>
+            <!-- <a class="dropdown-item" href="./pages/metodoPago.html">Donar
+            </a> -->
+            <a class="dropdown-item" routerLink="/agradecimientos">Agradecimientos</a>
           </div>
         </li>
         <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto">CONTACTO<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" routerLink="/nosotros">NOSOTROS<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">CARRITO<span class="sr-only"></span></a>
         </li>
 
         <section class="login">
@@ -50,9 +56,9 @@
                 <p class="sesion">Sign in</p>
               </i>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="estiloIcon">
-                <li><a class="dropdown-item" href="./pages/inicioSesion.html">Iniciar sesión</a></li>
-                <li><a class="dropdown-item" href="./pages/registro.html">Crear Cuenta</a></li>
-                <li><a class="dropdown-item" href="./pages/perfil.html">Mi cuenta</a></li>
+                <li><a class="dropdown-item" routerLink="/loguearse">Iniciar sesión</a></li>
+                <li><a class="dropdown-item" routerLink="/registrarse">Crear Cuenta</a></li>
+                <!-- <li><a class="dropdown-item" href="./pages/perfil.html">Mi cuenta</a></li> -->
               </ul>
             </li>
           </div>

@@ -1,11 +1,9 @@
 {
-  "agradecimientos": [
-    {"nombre": "Martin Guzmán de La Fuente"},
-    {"nombre": "Griselda Guzman"},
-    {"nombre": "Rocio Delvalle"},
-    {"nombre": "Oscar David Rios"},
-    {"nombre": "Celeste Reyna"},
-    {"nombre": "Abril Noemi Perez"},
-    {"nombre": "Raul Alejando Lopez"}
+  "contacto": [
+    {
+      "horario": "09:00 a 14:00 / 17:00 a 20:00",
+      "celular": 3516110625,
+      "email": "aspraproteccionanimal@gmail.com"
+    }
   ]
 }
