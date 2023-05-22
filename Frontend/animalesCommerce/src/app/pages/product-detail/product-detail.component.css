@@ -1,4 +1,4 @@
-.product-details {
+/* .product-details {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -6,15 +6,19 @@
     background-color: #f9f9f9;
     border: 1px solid #e5e5e5;
     border-radius: 5px;
-  }
+  } */
   
-  .product-details h2 {
+h2 {
     margin-top: 0;
     font-size: 1.5rem;
     text-align: center;
   }
-  
-  .product-details p {
+
+  p {
     margin-bottom: 1rem;
+  }
+  
+  img {
+    width: 100px;
   }
   

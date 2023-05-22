@@ -18,8 +18,9 @@ import { ReportarComponent } from './pages/reportar/reportar.component';
 import { RegistrarseComponent } from './auth/registrarse/registrarse.component';
 import { FinalizarAdopcionComponent } from './pages/finalizar-adopcion/finalizar-adopcion.component';
 import { ListaAdopcionComponent } from './pages/lista-adopcion/lista-adopcion.component';
-import { CartComponent } from './pages/cart/cart.component';
-/* import { ProductDetailsComponent} from './pages/product-details/product-details.component'; */
+import { ShoppingCartComponent } from './pages/cart/cart.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,7 +34,7 @@ const appRoutes: Routes = [
   { path: 'registrarse', component: RegistrarseComponent },
   { path: 'finalizarAdopcion', component: FinalizarAdopcionComponent },
   { path: 'listaAdopcion', component: ListaAdopcionComponent },
-  { path: 'cart', component: CartComponent },
+  { path: 'cart', component: ShoppingCartComponent },
 ];
 
 @NgModule({
@@ -52,10 +53,10 @@ const appRoutes: Routes = [
     RegistrarseComponent,
     FinalizarAdopcionComponent,
     ListaAdopcionComponent,
-    CartComponent,
-
+    ShoppingCartComponent,
+    ProductDetailComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

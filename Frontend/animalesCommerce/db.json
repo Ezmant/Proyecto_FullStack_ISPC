@@ -1,0 +1,40 @@
+{
+    "products": [
+      { 
+        "id": 1, 
+        "name": "Producto 1", 
+        "price": 100,
+        "details": "Este es un detalle para el producto 1",
+        "photo": "url_photo1",
+        "animalType": "Perro",
+        "size": "Grande",
+        "breed": "Labrador"
+      },
+      { 
+        "id": 2, 
+        "name": "Producto 2", 
+        "price": 200,
+        "details": "Este es un detalle para el producto 2",
+        "photo": "url_photo2",
+        "animalType": "Gato",
+        "size": "Pequeño",
+        "breed": "Siamés"
+      },
+      { 
+        "id": 3, 
+        "name": "Producto 3", 
+        "price": 300,
+        "details": "Este es un detalle para el producto 3",
+        "photo": "url_photo3",
+        "animalType": "Conejo",
+        "size": "Mediano",
+        "breed": "Angora"
+      }
+    ],
+    "cart": [],
+    "adoptions": [
+      { "id": 1, "productId": 1, "adoptionDate": "2023-05-01", "followUpDate": "2023-05-08" },
+      { "id": 2, "productId": 2, "adoptionDate": "2023-05-02", "followUpDate": "2023-05-09" }
+    ]
+  }
+  
