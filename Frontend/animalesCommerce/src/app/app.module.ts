@@ -20,6 +20,7 @@ import { FinalizarAdopcionComponent } from './pages/finalizar-adopcion/finalizar
 import { ListaAdopcionComponent } from './pages/lista-adopcion/lista-adopcion.component';
 import { CartComponent } from './pages/cart/cart.component';
 /* import { ProductDetailsComponent} from './pages/product-details/product-details.component'; */
+import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -53,9 +54,14 @@ const appRoutes: Routes = [
     FinalizarAdopcionComponent,
     ListaAdopcionComponent,
     CartComponent,
-
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes), ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule,
+    HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
