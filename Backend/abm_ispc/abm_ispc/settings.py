@@ -75,16 +75,19 @@ WSGI_APPLICATION = 'abm_ispc.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dbAspra',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'buolaz9f1tuv8wod5d2k',
+        'USER' : 'uweqknlvbyh7t9em',
+        'PASSWORD' : '5W5Z0aiPlccRdSyv8QsJ',
+        'HOST': 'buolaz9f1tuv8wod5d2k-mysql.services.clever-cloud.com',
+        'PORT' : '3306',
         'OPTIONS': {
-            'sql_mode': 'traditional',
+            'sql_mode': 'traditional'
         }
     }
 }
