@@ -1,34 +1,9 @@
 {
-  "listaAdopcion": [
+  "contacto": [
     {
-      "id": 1,
-      "titulo": "Lola",
-      "descripcion": "Lola tiene 3 años. es una gatita muy compañera y cariñosa. Está acostumbrada a dormir adentro y usa las piedritas para ir al baño."
-    },
-    {
-      "id": 2,
-      "titulo": "Tomy",
-      "descripcion": "Se da en adopción a Tomy. Es súper juguetón, le encantan los niños y los paseos por el parque. Es tranquilo y guardián."
-    },
-    {
-      "id": 3,
-      "titulo": "Pom Pom",
-      "descripcion": "Es un conejito súper afectuoso, ama las zanahorias y la lechuga. Se da en adopción a personas que cuenten con el espacio necesario para que el conejo viva cómodamente."
-    },
-    {
-      "id": 4,
-      "titulo": "Copito",
-      "descripcion": "Está castrado y tiene todas sus vacunas al día. No le gustan mucho los otros perros, por lo cual se recomienda que esté solo sin otros perros."
-    },
-    {
-      "id": 5,
-      "titulo": "Agata",
-      "descripcion": "Es muy compañera, tranquila, cariñosa y le gustan los niños. Le gusta mucho estar en casa y hace sus necesidades afuera."
-    },
-    {
-      "id": 6,
-      "titulo": "Gatitos Bebes",
-      "descripcion": "Tienen 45 días, son todos machos y buscan una familia que les de mucho amor. Están desparasitados, comen solos y usan piedritas sanitarias."
+      "horario": "09:00 a 14:00 / 17:00 a 20:00",
+      "celular": 3516110625,
+      "email": "aspraproteccionanimal@gmail.com"
     }
   ]
 }
