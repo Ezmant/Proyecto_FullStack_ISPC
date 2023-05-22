@@ -31,59 +31,14 @@
         </form>
     </div>
     <div class="productos">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;" *ngFor="let elements of lista">
             <img src="../../../assets/img/gato-lola.webp" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Lola</h5>
-                <p class="card-text">Lola tiene 3 años. es una gatita muy compañera y cariñosa. Esta acosumbrada a
-                    dormir adentro y usa las piedritas para ir al baño.</p>
+                <h5 class="card-title">{{elements.titulo}}</h5>
+                <p class="card-text">{{elements.descripcion}}</p>
                 <a routerLink="/cart" class="btn btn-primary">Añadir al Carrito</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../../../assets/img/perro-tomy.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tomy</h5>
-                <p class="card-text">Se da en adopcion a Tomy. Es super jugueton, le encantan los niños y los paseos por
-                    el parque. Es tranquilo y guardian.</p>
-                <a routerLink="/cart" class="btn btn-primary">Añadir al Carrito</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../../../assets/img/conejo- Pompom.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Pom Pom</h5>
-                <p class="card-text">Es un aconejito super afectuoso, ama las zanahorias y la lechuga. se da en adopcion
-                    a personas que cuenten con el espacio necesario para que el conejo viva comodamente.</p>
-                <a routerLink="/cart" class="btn btn-primary">Añadir al Carrito</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../../../assets/img/caniche-copito.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Copito</h5>
-                <p class="card-text">Esta castrado y tiene todas sus vacunas al dia.No le gutan mucho los otros perros,
-                    por lo cual se recomienda que este solo sin otros perros.</p>
-                <a routerLink="/cart" class="btn btn-primary">Añadir al Carrito</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../../../assets/img/gata-agata.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Agata</h5>
-                <p class="card-text">Es muy compañera,tranquila, cariñosa y le gustan los niños. Le gusta mucho estar en
-                    casa y hace sus necesidades afuera.</p>
-                <a routerLink="/cart" class="btn btn-primary">Añadir al Carrito</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../../../assets/img/Gatitos-bebe.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Gatitos Bebes</h5>
-                <p class="card-text">Tienen 45 dias,son todos machos y buscan una familia que les de mucho amor.Estan
-                    desparasitados, comen solos y usan piedritas sanitarias.</p>
-                <a routerLink="/cart" class="btn btn-primary">Añadir al Carrito</a>
-            </div>
-        </div>
+        
     </div>
 </main>
