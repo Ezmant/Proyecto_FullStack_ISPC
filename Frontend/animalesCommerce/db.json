@@ -1,30 +1,140 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Producto 1",
-        "price": 100,
-        "description": "Descripción del producto 1",
-        "photoUrl": "http://example.com/product1.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Producto 2",
-        "price": 200,
-        "description": "Descripción del producto 2",
-        "photoUrl": "http://example.com/product2.jpg"
-      }
-    ],
-    "cart": [
-      {
-        "id": 1,
-        "name": "Producto 1",
-        "price": 100,
-        "description": "Descripción del producto 1",
-        "photoUrl": "http://example.com/product1.jpg",
-        "quantity": 1
-      }
-    ]
-  }
-  
-  
+  "contacto": [
+    {
+      "horario": "09:00 a 14:00 / 17:00 a 20:00",
+      "celular": 3516110625,
+      "email": "aspraproteccionanimal@gmail.com"
+    }
+  ],
+  "agradecimientos": [
+    {"nombre": "Martin Guzmán de La Fuente"},
+    {"nombre": "Griselda Guzman"},
+    {"nombre": "Rocio Delvalle"},
+    {"nombre": "Oscar David Rios"},
+    {"nombre": "Celeste Reyna"},
+    {"nombre": "Abril Noemi Perez"},
+    {"nombre": "Raul Alejando Lopez"}
+  ],
+  "veterinarios": [
+    {"nombre":"Martin Guzman", "email":"MGuzman@gmail.com", "telefono":"1565458789"},
+    {"nombre":"Maria Lopez", "email":"MLopez@gmail.com", "telefono":"260425624"},
+    {"nombre":"Roberto Giordano", "email":"RGiordano@gmail.com", "telefono":"145815656"},
+    {"nombre":"Julian Cazal", "email":"JCazal@gmail.com", "telefono":"354222256"},
+    {"nombre":"Juliana Santilla", "email":"JSantillan@gmail.com", "telefono":"1152565538"}
+  ],
+  "Refuguios": [
+    {
+      "nombre": "Amor Canino",
+      "telefono": "111333555",
+      "email": "contacto@amorcanino.com",
+      "direccion": "Avenida Central 456",
+      "ciudad": "San Nicolás de los Arroyos",
+      "provincia": "Buenos Aires"
+    },
+    {
+      "nombre": "Refugio Hogar Animal",
+      "telefono": "333111888",
+      "email": "info@hogaranimal.org",
+      "direccion": "Calle Principal 123",
+      "ciudad": "San Salvador de Jujuy",
+      "provincia": "Jujuy"
+    },
+    {
+      "nombre": "Patas Callejeras",
+      "telefono": "888555222",
+      "email": "contacto@patascallejeras.com",
+      "direccion": "Avenida Libertador 789",
+      "ciudad": "Santa Fe",
+      "provincia": "Santa Fe"
+    },
+    {
+      "nombre": "Refugio Animalitos en Apuros",
+      "telefono": "777333111",
+      "email": "info@animalesenapuros.org",
+      "direccion": "Calle Principal 456",
+      "ciudad": "San Luis",
+      "provincia": "San Luis"
+    },
+    {
+      "nombre": "Hogar de Gatos Felices",
+      "telefono": "222888555",
+      "email": "contacto@gatosfelices.com",
+      "direccion": "Avenida Central 123",
+      "ciudad": "La Rioja",
+      "provincia": "La Rioja"
+    },
+    {
+      "nombre": "Refugio Amigos del Bosque",
+      "telefono": "999555111",
+      "email": "info@amigosdelbosque.org",
+      "direccion": "Calle Principal 789",
+      "ciudad": "San Carlos de Bariloche",
+      "provincia": "Río Negro"
+    },
+    {
+      "nombre": "Perritos Felices",
+      "telefono": "111333555",
+      "email": "contacto@perritosfelices.com",
+      "direccion": "Avenida Libertad 456",
+      "ciudad": "Santa Rosa",
+      "provincia": "La Pampa"
+    },
+    {
+      "nombre": "Refugio Animalitos Sin Hogar",
+      "telefono": "555777333",
+      "email": "info@animalitossinhogar.org",
+      "direccion": "Calle Principal 123",
+      "ciudad": "San Miguel de Tucumán",
+      "provincia": "Tucumán"
+    },
+    {
+      "nombre": "Hogar Canino Esperanza",
+      "telefono": "888222555",
+      "email": "contacto@hogaresperanza.com",
+      "direccion": "Avenida Central 789",
+      "ciudad": "Bahía Blanca",
+      "provincia": "Buenos Aires"
+    },
+    {
+        "nombre": "Refugio Peludos del Sur",
+        "telefono": "444777999",
+        "email": "info@peludosdelsur.org",
+        "direccion": "Calle Principal 456",
+        "ciudad": "Neuquén",
+        "provincia": "Neuquén"      
+    }
+    
+  ],
+  "listaAdopcion": [
+    {
+      "id": 1,
+      "titulo": "Lola",
+      "descripcion": "Lola tiene 3 años. es una gatita muy compañera y cariñosa. Está acostumbrada a dormir adentro y usa las piedritas para ir al baño."
+    },
+    {
+      "id": 2,
+      "titulo": "Tomy",
+      "descripcion": "Se da en adopción a Tomy. Es súper juguetón, le encantan los niños y los paseos por el parque. Es tranquilo y guardián."
+    },
+    {
+      "id": 3,
+      "titulo": "Pom Pom",
+      "descripcion": "Es un conejito súper afectuoso, ama las zanahorias y la lechuga. Se da en adopción a personas que cuenten con el espacio necesario para que el conejo viva cómodamente."
+    },
+    {
+      "id": 4,
+      "titulo": "Copito",
+      "descripcion": "Está castrado y tiene todas sus vacunas al día. No le gustan mucho los otros perros, por lo cual se recomienda que esté solo sin otros perros."
+    },
+    {
+      "id": 5,
+      "titulo": "Agata",
+      "descripcion": "Es muy compañera, tranquila, cariñosa y le gustan los niños. Le gusta mucho estar en casa y hace sus necesidades afuera."
+    },
+    {
+      "id": 6,
+      "titulo": "Gatitos Bebes",
+      "descripcion": "Tienen 45 días, son todos machos y buscan una familia que les de mucho amor. Están desparasitados, comen solos y usan piedritas sanitarias."
+    }
+  ]
+}

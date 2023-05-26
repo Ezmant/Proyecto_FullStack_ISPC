@@ -1,30 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ShoppingCartComponent } from './shopping-cart.component';
-import { ShoppingCartService } from '../../services/shopping-cart.service';
-import { of } from 'rxjs';
-import { Product } from '../../../product';
+import { CartComponent, Product } from './cart.component';
 
-describe('ShoppingCartComponent', () => {
-  let component: ShoppingCartComponent;
-  let fixture: ComponentFixture<ShoppingCartComponent>;
-  let shoppingCartService: ShoppingCartService;
+describe('CartComponent', () => {
+  let component: CartComponent;
+  let fixture: ComponentFixture<CartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShoppingCartComponent ],
-      providers: [ ShoppingCartService ]
-    })
-    .compileComponents();
+      declarations: [CartComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShoppingCartComponent);
+    fixture = TestBed.createComponent(CartComponent);
     component = fixture.componentInstance;
-    shoppingCartService = TestBed.inject(ShoppingCartService);
-
-    spyOn(shoppingCartService, 'getProducts').and.returnValue(of<Product[]>([]));
-    spyOn(shoppingCartService, 'getCart').and.returnValue(of<Product[]>([]));
-
     fixture.detectChanges();
   });
 
@@ -32,6 +21,30 @@ describe('ShoppingCartComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // Puedes agregar más pruebas aquí
+  it('should add a product to the cart', () => {
+    const product: Product = { id: 1, name: 'Product 1', price: 10 };
+    component.addToCart(product);
+    expect(component.cartItems.length).toBe(1);
+    expect(component.cartItems[0]).toEqual(product);
+  });
+
+  it('should remove a product from the cart', () => {
+    const product1: Product = { id: 1, name: 'Product 1', price: 10 };
+    const product2: Product = { id: 2, name: 'Product 2', price: 20 };
+    component.addToCart(product1);
+    component.addToCart(product2);
+    component.removeFromCart(product1);
+    expect(component.cartItems.length).toBe(1);
+    expect(component.cartItems[0]).toEqual(product2);
+  });
+
+  it('should calculate the total correctly', () => {
+    const product1: Product = { id: 1, name: 'Product 1', price: 10 };
+    const product2: Product = { id: 2, name: 'Product 2', price: 20 };
+    component.addToCart(product1);
+    component.addToCart(product2);
+    const total = component.getTotal();
+    expect(total).toBe(30);
+  });
 });
 

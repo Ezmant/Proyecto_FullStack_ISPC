@@ -1,39 +1,32 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from '../../../product';
-import { ShoppingCartService } from '../../services/cart.service';
+import { Component } from '@angular/core';
+
+export interface Product {
+  id: number;
+  name: string;
+  price: number;
+}
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class ShoppingCartComponent implements OnInit {
-  products: Product[] = [];
-  cart: Product[] = [];
-
-  constructor(private shoppingCartService: ShoppingCartService) { }
-
-  ngOnInit() {
-    this.shoppingCartService.getProducts().subscribe(products => {
-      this.products = products;
-    });
-
-    this.shoppingCartService.getCart().subscribe(cart => {
-      this.cart = cart;
-    });
-  }
+export class CartComponent {
+  cartItems: Product[] = [];
 
   addToCart(product: Product) {
-    this.shoppingCartService.addToCart(product).subscribe(() => {
-      this.cart.push(product);
-    });
+    this.cartItems.push(product);
   }
 
   removeFromCart(product: Product) {
-    this.shoppingCartService.removeFromCart(product).subscribe(() => {
-      this.cart = this.cart.filter(item => item.id !== product.id);
-    });
+    const index = this.cartItems.findIndex((item) => item.id === product.id);
+    if (index > -1) {
+      this.cartItems.splice(index, 1);
+    }
+  }
+
+  getTotal() {
+    return this.cartItems.reduce((total, product) => total + product.price, 0);
   }
 }
-
 

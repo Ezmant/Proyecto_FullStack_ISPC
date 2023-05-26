@@ -1,15 +1,12 @@
-<h2>Productos</h2>
-<ul>
-    <li *ngFor="let product of products">
-        {{product.name}} - {{product.price | currency}}
-        <button (click)="addToCart(product)">Agregar al carrito</button>
-    </li>
-</ul>
+<div class="cart">
+    <h2>Carrito de compras</h2>
+    <ul>
+        <li *ngFor="let item of cartItems">
+            {{item.name}} - {{item.price | currency}}
+            <button (click)="removeFromCart(item)">Eliminar</button>
+        </li>
+    </ul>
+    <p>Total: {{getTotal() | currency}}</p>
 
-<h2>Carrito</h2>
-<ul>
-    <li *ngFor="let product of cart">
-        {{product.name}} - {{product.price | currency}}
-        <button (click)="removeFromCart(product)">Eliminar del carrito</button>
-    </li>
-</ul>
+    <a routerLink="/finalizarAdopcion" class="container btn btn-primary my-3" style="background-color: #023B48;">Finalizar Adopcion</a>
+</div>
