@@ -1,20 +1,26 @@
 <main>
-    <form class="container-sm" [formGroup]="loguearse" (ngSubmit)="submitForm($event)">
+    <form class="container-sm" [formGroup]="form" (ngSubmit)="onEnviar($event)">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
-            <p id="invalidEmail" *ngIf="invalidEmail">Ingrese un correo electronico válido</p>
+            <div *ngIf="email?.errors && email?.touched">
+                <p *ngIf="email?.hasError('required')" class="text-danger">El email es requerido</p>
+                <p *ngIf="email?.hasError('email')" class="text-danger">Ingrese un email válido</p>
+            </div>    
+            
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" formControlName="password">
-            <p id="invalidPass" *ngIf="invalidPass">Ingrese una contraseña</p>
+            <div *ngIf="password?.errors && password?.touched">
+                <p *ngIf="password?.hasError('required')" class="text-danger">La contraseña es requerida</p>
+                <p *ngIf="password?.errors?.['minlength']" class="text-danger">Ingrese una contraseña con un minimo de 8 caracteres</p>
+            </div> 
         </div>
         <div class="enviar">
             <button class="btn btn-primary" type="submit">Iniciar Sesión</button>
             <span>¿No tenes una cuenta?
             <a href="#" class="registro">Registrate</a></span>
-            <p id="formValid" *ngIf="formValid">Inicio de sesión aprobado</p>
         </div>
     </form>
 </main>

@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { FormBuilder} from '@angular/forms';
+import { FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-loguearse',
@@ -8,45 +8,29 @@ import { FormBuilder} from '@angular/forms';
 })
 export class LoguearseComponent {
 
-  loguearse;
-  invalidEmail:Boolean = false;
-  invalidPass:Boolean = false;
-  formValid:Boolean = false;
-
+  form;
 
   constructor(private formBuilder:FormBuilder) {
-    this.loguearse=this.formBuilder.group({
-      email:'',
-      password:''
+    this.form=this.formBuilder.group({
+      email:['',[Validators.required, Validators.email]],
+      password:['',[Validators.required, Validators.minLength(8)]]
     })
   }
 
-  validarForm(){
-    if ((this.loguearse.value.email == "" || !this.loguearse.value.email?.includes('@') || !this.loguearse.value.email?.includes('.')) && this.loguearse.value.password == "") {
-      this.invalidEmail = true
-      this.invalidPass = true
-      this.formValid = false
-    }
-    else if (this.loguearse.value.email == "" || !this.loguearse.value.email?.includes('@') || !this.loguearse.value.email?.includes('.')){
-      this.invalidEmail = true
-      this.invalidPass = false
-      this.formValid = false
-    }
-    else if (this.loguearse.value.password == ""){
-      this.invalidEmail = false
-      this.invalidPass = true
-      this.formValid = false
-    }
-    else {
-      this.invalidEmail = false
-      this.invalidPass = false
-      this.formValid = true
-    }
+  get email(){
+    return this.form.get("email")
   }
 
-  submitForm(event:Event){
+  get password(){
+    return this.form.get("password")
+  }
+
+  onEnviar(event:Event){
     event.preventDefault();
-    this.validarForm()
+    if (this.form.valid) {
+      alert("Enviar al servidor...")
+    }
+    this.form.markAllAsTouched()
   }
 
 }

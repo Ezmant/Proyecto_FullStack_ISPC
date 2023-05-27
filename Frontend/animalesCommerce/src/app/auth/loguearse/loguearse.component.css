@@ -24,13 +24,12 @@ a:hover{
     background-color:#006075
 }
 
-#invalidEmail, #invalidPass {
-    color: red
+.ng-valid:not(form).ng-touched{
+    border-left: 5px solid green;
 }
 
-#formValid {
-    color: green;
-    margin-top: 10px;
+.ng-invalid:not(form).ng-touched{
+    border-left: 5px solid red;
 }
 
 @media (min-width: 992px) {
