@@ -43,7 +43,7 @@ class TipoAnimalAdmin(admin.ModelAdmin):
     list_display=('id','tipo')
 
 class AnimalesAdmin(admin.ModelAdmin):
-    list_display=('id','nombre','edad','tamaño','raza','fecha_ingreso','id_refufio','id_tipo')
+    list_display=('id','nombre','edad','tamano','raza','fecha_ingreso','id_refufio','id_tipo')
      
 admin.site.register(Refugio,RefugioAdmin)
 admin.site.register(Veterinario,VeterinariosAdmin)

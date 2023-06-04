@@ -82,7 +82,7 @@ class Animales(models.Model):
     id=models.AutoField(primary_key=True)
     nombre=models.CharField(max_length=45,blank=False)
     edad=models.IntegerField(blank=False)
-    tamaño=models.CharField(max_length=45,blank=False)
+    tamano=models.CharField(max_length=45,blank=False)
     raza=models.CharField(max_length=45,blank=False)
     fecha_ingreso=models.DateField(blank=False)
     id_refufio=models.ForeignKey(Refugio, to_field='id', on_delete=models.CASCADE)
