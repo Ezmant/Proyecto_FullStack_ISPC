@@ -19,7 +19,7 @@ from .models import TipoAnimal
 from .models import  Animales
      
 class RefugioAdmin(admin.ModelAdmin):
-    list_display=('nombre','telefono','email','direccion','ciudad','provincia')
+    list_display=('id','nombre','telefono','email','direccion','ciudad','provincia')
      
 
 class VeterinariosAdmin(admin.ModelAdmin):

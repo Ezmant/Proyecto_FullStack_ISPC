@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import make_password
+from .models import Animales
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -12,4 +13,8 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ('email', 'username', 'password')
     def validate_password(self, value):
         return make_password(value)
-    
+
+class AnimalesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Animales
+        fields = '__all__'
