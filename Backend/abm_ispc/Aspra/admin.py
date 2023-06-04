@@ -15,6 +15,7 @@ from .models import Donacion
 from .models import Reporte
 from .models import Usuario
 from .models import UsuarioAnimales
+from .models import TipoAnimal
      
 class RefugioAdmin(admin.ModelAdmin):
     list_display=('nombre','telefono','email','direccion','ciudad','provincia')
@@ -36,6 +37,9 @@ class UsuarioAdmin(admin.ModelAdmin):
 
 class UsuarioAnimalesAdmin(admin.ModelAdmin):
     list_display= ('dni_usuario2','id_animal1')
+
+class TipoAnimalAdmin(admin.ModelAdmin):
+    list_display=('id','tipo')
      
 admin.site.register(Refugio,RefugioAdmin)
 admin.site.register(Veterinario,VeterinariosAdmin)
@@ -43,3 +47,4 @@ admin.site.register(Donacion, DonacionAdmin)
 admin.site.register(Reporte,ReporteAdmin)
 admin.site.register(Usuario,UsuarioAdmin)
 admin.site.register(UsuarioAnimales,UsuarioAnimalesAdmin)
+admin.site.register(TipoAnimal,TipoAnimalAdmin)

@@ -65,7 +65,19 @@ class Reporte(models.Model):
         return self.direccion
     def __str__(self):
         return self.direccion
-
+    
+class TipoAnimal(models.Model):
+    id= models.AutoField(primary_key=True)
+    tipo=models.CharField(max_length=45,blank=False)
+    class Meta:
+        db_table='TipoAnimal'
+        verbose_name='TipoAnimal'
+        verbose_name_plural='TiposAnimales'
+    def __unicode__(self):
+        return self.tipo
+    def __str__(self):
+        return self.tipo
+    
 class Usuario(models.Model):
     dni = models.CharField(primary_key=True,max_length=45, blank=False)
     nombre= models.CharField(max_length=45,blank=False)
