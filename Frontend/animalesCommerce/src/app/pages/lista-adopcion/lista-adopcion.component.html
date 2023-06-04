@@ -32,12 +32,12 @@
         </form>
     </div>
 
-    <a routerLink="#" class="btn btn-success btn-sm" style="float: right; padding: 10px;"><i class="fa-solid fa-plus fa-lg"></i> Agregar animal</a> 
+    <a routerLink="/agregarAnimal" class="btn btn-success btn-sm" style="float: right; padding: 10px;"><i class="fa-solid fa-plus fa-lg"></i> Agregar animal</a> 
 
     <div class="productos">
         
         <div class="card" style="width: 18rem;" *ngFor="let element of lista">
-            <img src="../../../assets/img/gato-lola.webp" class="card-img-top" alt="...">
+            <img [src]="element.img" class="card-img-top" alt="Foto animal">
             <div class="card-body">
                 <h5 class="card-title"><b>Nombre:</b> {{element.nombre}}</h5>
                 <p class="card-text"><b> Edad aprox.:</b> {{element.edad}} años</p>

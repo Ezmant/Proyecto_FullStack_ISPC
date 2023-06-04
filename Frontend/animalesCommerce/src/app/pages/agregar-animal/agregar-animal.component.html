@@ -1,5 +1,5 @@
 <div class="wrapper  mt-sm-5">
-    <h4 class="pb-4 border-bottom">Mi cuenta</h4>
+    <h4 class="pb-4 border-bottom">Agregar animal</h4>
     <form name="formulario" id="formulario" action="" class="needs-validation"  method="post"
         novalidate [formGroup]="form" (ngSubmit)="onEnviar($event)">
         <div class="py-2">
@@ -20,8 +20,12 @@
                             <p *ngIf="edad?.hasError('required')" class="text-danger">Ingrese la edad</p>
                             <p *ngIf="edad?.errors?.['minlength']" class="text-danger">Minimo 1 digito, máximo 3</p>
                         </div> 
+                    
                 </div>
-
+                <div class="col-md-12">
+                    <label for="nombre">Url imagen</label>
+                    <input type="text" class="bg-light form-control" name="img" formControlName="img" required>
+                </div>
             </div>
             <div class="row py-2">
 
@@ -33,22 +37,30 @@
                             <p *ngIf="raza?.hasError('required')" class="text-danger">Ingrese la raza</p>
                             <p *ngIf="raza?.errors?.['minlength']" class="text-danger">Minimo 3 caracteres</p>
                         </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <label for="tipo">Tipo</label>
+                    <select name="tipo" id="tipo" class="bg-light">
+                    <option value="1" selected>Perro</option>
+                    <option value="2">Gato</option>
+                    <option value="3">Grande</option>
+                    </select>
                 </div>
             </div>
             <div class="row py-2">
                 <div class="col-md-6">
                     <label for="tamaño">Tamaño</label>
-                    <select name="tamañp" id="tamaño" class="bg-light">
+                    <select name="tamaño" id="tamaño" class="bg-light">
                     <option value="1" selected>Chico</option>
                     <option value="2">Mediano</option>
                     <option value="3">Grande</option>
-                       
                     </select>
                 </div>
                 <div class="col-md-6 pt-md-0 pt-3">
                     <label for="fecha">Fecha de Ingreso</label>
-                    <input type="text" name="fecha" class="bg-light form-control" placeholder="01/12/2020" minlength="3"
-                        maxlength="20" formControlName="fecha" required>
+                    <input type="date" name="fecha" class="bg-light form-control" placeholder="01/12/2020" minlength="3"
+                        maxlength="20" formControlName="fecha_ingreso" required>
                         <div *ngIf="fecha?.errors && fecha?.touched">
                             <p *ngIf="fecha?.hasError('required')" class="text-danger">Ingrese una fecha</p>
                             <p *ngIf="fecha?.errors?.['minlength']" class="text-danger">Minimo 5 caracteres</p>
@@ -57,7 +69,9 @@
             </div>
         </div>
         <div class="py-3 pb-4 border-bottom">
-            <button class="btn btn-primary" type="submit">Agregar animal</button>
+            <button class="btn btn-primary" type="submit" style="padding: 10px;">Agregar animal</button>
             <span id="dinamic-text"></span>
         </div>
+
+        <a routerLink="/listaAdopcion" class="text-primary">Volver al listado</a>
     </form>

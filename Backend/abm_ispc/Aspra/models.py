@@ -85,6 +85,7 @@ class Animales(models.Model):
     tamano=models.CharField(max_length=45,blank=False)
     raza=models.CharField(max_length=45,blank=False)
     fecha_ingreso=models.DateField(blank=False)
+    img=models.CharField(max_length=500,blank=False)
     id_refufio=models.ForeignKey(Refugio, to_field='id', on_delete=models.CASCADE)
     id_tipo=models.ForeignKey(TipoAnimal, to_field='id', on_delete=models.CASCADE)
     class Meta:
