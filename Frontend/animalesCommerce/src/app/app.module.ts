@@ -9,7 +9,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
-import { PetFriendlyComponent } from './pages/pet-friendly/pet-friendly.component';
+import { RefugiosComponent } from './pages/refugios/refugios.component';
 import { VeterinariosComponent } from './pages/veterinarios/veterinarios.component';
 import { LoguearseComponent } from './auth/loguearse/loguearse.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -27,7 +27,7 @@ import { AgregarAnimalComponent } from './pages/agregar-animal/agregar-animal.co
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'nosotros', component: NosotrosComponent },
-  { path: 'petFriendly', component: PetFriendlyComponent },
+  { path: 'refugios', component: RefugiosComponent },
   { path: 'veterinarios', component: VeterinariosComponent },
   { path: 'loguearse', component: LoguearseComponent },
   { path: 'agradecimientos', component: AgradecimientosComponent },
@@ -50,7 +50,7 @@ const appRoutes: Routes = [
     NosotrosComponent,
     ContactoComponent,
     HomeComponent,
-    PetFriendlyComponent,
+    RefugiosComponent,
     VeterinariosComponent,
     LoguearseComponent,
     AgradecimientosComponent,
