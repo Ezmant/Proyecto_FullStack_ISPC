@@ -6,7 +6,7 @@
             <div class="row py-2">
                 <div class="col-md-6">
                     <label for="nombre">Nombre Completo</label>
-                    <input type="text" class="bg-light form-control" placeholder="Federico Casas" name="nombre" formControlName="nombre"
+                    <input type="text" class="bg-light form-control" placeholder="{{lista[0].nombre}}" name="nombre" formControlName="nombre"
                         required>
                         <div *ngIf="nombre?.errors && nombre?.touched">
                             <p *ngIf="nombre?.hasError('required')" class="text-danger">Ingrese un nombre</p>
@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-md-6 pt-md-0 pt-3">
                     <label for="dni">DNI</label>
-                    <input name="dni" type="number" class="bg-light form-control" placeholder="21309123" MIN=1000000
+                    <input name="dni" type="number" class="bg-light form-control" placeholder="{{lista[0].dni}}" MIN=1000000 
                     MAX=99999999 formControlName="dni" required>
                         <div *ngIf="dni?.errors && dni?.touched">
                             <p *ngIf="dni?.hasError('required')" class="text-danger">Ingrese un dni</p>
@@ -27,7 +27,7 @@
             <div class="row py-2">
                 <div class="col-md-6">
                     <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="bg-light form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+                    <input type="email" class="bg-light form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email" placeholder="{{lista[0].email}}">
                     <div *ngIf="email?.errors && email?.touched">
                           <p *ngIf="email?.hasError('required')" class="text-danger">Ingrese un email</p>
                          <p *ngIf="email?.hasError('email')" class="text-danger">Mail inválido</p>
@@ -37,7 +37,7 @@
 
                 <div class="col-md-6 pt-md-0 pt-3">
                     <label for="phone">Teléfono</label>
-                    <input type="number" name="phone" class="bg-light form-control" placeholder="3092123456"
+                    <input type="number" name="phone" class="bg-light form-control" placeholder="{{lista[0].telefono}}"
                         min="100000" max="999999999" formControlName="telefono" required>
                         <div *ngIf="telefono?.errors && telefono?.touched">
                             <p *ngIf="telefono?.hasError('required')" class="text-danger">Ingrese un número de teléfono</p>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-md-6 pt-md-0 pt-3">
                     <label for="ciudad">Ciudad</label>
-                    <input type="text" name="ciudad" class="bg-light form-control" placeholder="Rosario" minlength="3"
+                    <input type="text" name="ciudad" class="bg-light form-control" placeholder="{{lista[0].ciudad}}" minlength="3"
                         maxlength="20" formControlName="ciudad" required>
                         <div *ngIf="ciudad?.errors && ciudad?.touched">
                             <p *ngIf="ciudad?.hasError('required')" class="text-danger">Ingrese una ciudad</p>
@@ -87,7 +87,7 @@
             </div>
             <div class="col-md-6 pt-md-0 pt-3">
                 <label for="postal">Código Postal</label>
-                <input type="number" name="postal" class="bg-light form-control" placeholder="3222" max="9999" min="0"
+                <input type="number" name="postal" class="bg-light form-control" placeholder="{{lista[0].codigoPostal}}" max="9999" min="0"
                     formControlName="codigoPostal" required>
                     <div *ngIf="codigoPostal?.errors && codigoPostal?.touched">
                         <p *ngIf="codigoPostal?.hasError('required')" class="text-danger">Ingrese código postal</p>

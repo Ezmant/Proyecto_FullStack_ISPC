@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators} from '@angular/forms';
+import { MiCuentaService } from 'src/app/services/mi-cuenta.service';
 
 @Component({
   selector: 'app-mi-cuenta',
   templateUrl: './mi-cuenta.component.html',
   styleUrls: ['./mi-cuenta.component.css']
 })
-export class MiCuentaComponent {
+export class MiCuentaComponent implements OnInit{
   form;
-
-  constructor(private formBuilder:FormBuilder) {
+  lista: any;
+  constructor(private formBuilder:FormBuilder, private miCuenta:MiCuentaService) {
     this.form=this.formBuilder.group({
       email:['',[Validators.required, Validators.email]],
       nombre:['',[Validators.required, Validators.minLength(5), Validators.maxLength(30)]],
@@ -17,6 +18,21 @@ export class MiCuentaComponent {
       telefono:['',[Validators.required, Validators.minLength(8), Validators.maxLength(15)]],
       ciudad:['',[Validators.required, Validators.minLength(5), Validators.maxLength(30)]],
       codigoPostal:['',[Validators.required, Validators.minLength(4), Validators.maxLength(5)]]
+    })
+  }
+
+  ngOnInit(): void {
+    this.lista = this.listaMiCuenta();
+  }
+
+  listaMiCuenta():any {
+    this.miCuenta.verMiCuenta().subscribe({
+      next: (response) => {
+        this.lista = response
+      },
+      error: (errorResponse) => {
+        console.error(errorResponse)
+      }
     })
   }
 

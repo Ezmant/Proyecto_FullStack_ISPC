@@ -21,6 +21,8 @@ import { ListaAdopcionComponent } from './pages/lista-adopcion/lista-adopcion.co
 import { CartComponent } from './pages/cart/cart.component';
 /* import { ProductDetailsComponent} from './pages/product-details/product-details.component'; */
 import {HttpClientModule} from '@angular/common/http';
+import { MiCuentaComponent } from './auth/mi-cuenta/mi-cuenta.component';
+import { AgregarAnimalComponent } from './pages/agregar-animal/agregar-animal.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -35,6 +37,9 @@ const appRoutes: Routes = [
   { path: 'finalizarAdopcion', component: FinalizarAdopcionComponent },
   { path: 'listaAdopcion', component: ListaAdopcionComponent },
   { path: 'cart', component: CartComponent },
+  { path: 'miCuenta', component: MiCuentaComponent },
+  { path: 'agregarAnimal', component: AgregarAnimalComponent },
+
 ];
 
 @NgModule({
@@ -54,6 +59,8 @@ const appRoutes: Routes = [
     FinalizarAdopcionComponent,
     ListaAdopcionComponent,
     CartComponent,
+    MiCuentaComponent,
+    AgregarAnimalComponent,
   ],
   imports: [
     BrowserModule,
