@@ -11,6 +11,53 @@ main {
     background-color:#006075
 }
 
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+      
+.error-message span {
+    display: block;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.registro{
+    margin-top: 10px;
+}
+
+.contenedor-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+      
+.form-label {
+    font-weight: bold;
+}
+      
+.form-control {
+        margin-bottom: 10px;
+}
+.btn-primary {
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+}
+      
+.btn-primary:hover {
+    background-color: #0d7a6c;
+}
+#provincia {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+  }
 @media (min-width: 992px) {
     .contenedor-form{
         width: 100%;

@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RefugiosService } from 'src/app/services/refugios.service';
 
 @Component({
-  selector: 'app-pet-friendly',
-  templateUrl: './pet-friendly.component.html',
-  styleUrls: ['./pet-friendly.component.css']
+  selector: 'app-refugios',
+  templateUrl: './refugios.component.html',
+  styleUrls: ['./refugios.component.css']
 })
-export class PetFriendlyComponent {
+export class RefugiosComponent {
   datos:any;
 
   constructor(private listRef:RefugiosService) {}
