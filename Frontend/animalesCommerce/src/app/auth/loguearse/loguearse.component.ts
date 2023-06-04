@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { FormBuilder, Validators} from '@angular/forms';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-loguearse',
@@ -10,7 +11,7 @@ export class LoguearseComponent {
 
   form;
 
-  constructor(private formBuilder:FormBuilder) {
+  constructor(private formBuilder:FormBuilder, private login:LoginService) {
     this.form=this.formBuilder.group({
       email:['',[Validators.required, Validators.email]],
       password:['',[Validators.required, Validators.minLength(8)]]
@@ -28,7 +29,17 @@ export class LoguearseComponent {
   onEnviar(event:Event){
     event.preventDefault();
     if (this.form.valid) {
-      alert("Enviar al servidor...")
+      console.log(this.form.value)
+      this.login.login(this.form.value).subscribe({
+        next: (response) => {
+          if (response){
+            alert("Inicio aprobado!");
+          } 
+        },
+        error: () => {
+          alert("Credenciales incorrectas...")
+        }
+      })
     }
     this.form.markAllAsTouched()
   }
