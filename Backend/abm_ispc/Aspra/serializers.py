@@ -6,11 +6,10 @@ from .models import Animales
 
 class UserSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(required=True)
-    username = serializers.CharField(required=True)
     password = serializers.CharField(min_length=8, write_only=True)
     class Meta:
         model = get_user_model()
-        fields = ('email', 'username', 'password')
+        fields = ('email', 'password')
     def validate_password(self, value):
         return make_password(value)
 

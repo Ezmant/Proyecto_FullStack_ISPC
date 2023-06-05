@@ -1,8 +1,8 @@
 
 <main class="contenedor-form">
-    <form class="row g-3 container-sm" [formGroup]="registrarse" (ngSubmit)="submitForm()">
+    <form class="row g-3 container-sm" [formGroup]="registrarse" (ngSubmit)="submitForm($event)">
         <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
+            <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" formControlName="email" required>
             <div *ngIf="registrarse.get('email')?.invalid && registrarse.get('email')?.touched" class="error-message">
                 <span *ngIf="registrarse.get('email')?.hasError('required')">El correo electrónico es requerido.</span>
@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Contraseña</label>
+            <label for="password" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="password" formControlName="password" required>
             <div *ngIf="registrarse.get('password')?.invalid && registrarse.get('password')?.touched" class="error-message">
                 <span *ngIf="registrarse.get('password')?.hasError('required')">La contraseña es requerida.</span>
@@ -19,7 +19,7 @@
         </div>
 
         <div class="col-md-6">
-            <label for="inputPassword5" class="form-label">Confirmar contraseña</label>
+            <label for="passcon" class="form-label">Confirmar contraseña</label>
             <input type="password" class="form-control" id="passcon" formControlName="passcon" required>
             <div *ngIf="registrarse.get('passcon')?.invalid && registrarse.get('passcon')?.touched" class="error-message">
                 <span *ngIf="registrarse.get('passcon')?.hasError('required')">La contraseña es requerida.</span>
@@ -28,7 +28,7 @@
             
         </div>
         <div class="col-md-4">
-            <label for="inputZip" class="form-label">DNI</label>
+            <label for="dni" class="form-label">DNI</label>
             <input type="text" class="form-control" id="dni" formControlName="dni" required>
             <div *ngIf="registrarse.get('dni')?.invalid && registrarse.get('dni')?.touched" class="error-message">
                 <span *ngIf="registrarse.get('dni')?.hasError('required')">El DNI es requerido.</span>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Dirección</label>
+            <label for="direccion" class="form-label">Dirección</label>
             <input type="text" class="form-control" id="direccion" placeholder="1234 Main St" formControlName="direccion" required>
             <div *ngIf="registrarse.get('direccion')?.invalid && registrarse.get('direccion')?.touched" class="error-message">
                 <span *ngIf="registrarse.get('direccion')?.hasError('required')">La dirección es requerida.</span>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <label for="inputCity" class="form-label">Localidad</label>
+            <label for="localidad" class="form-label">Localidad</label>
             <input type="text" class="form-control" id="localidad" formControlName="localidad" required>
             <div *ngIf="registrarse.get('localidad')?.invalid && registrarse.get('localidad')?.touched" class="error-message">
                 <span *ngIf="registrarse.get('localidad')?.hasError('required')">La localidad es requerida.</span>
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <label for="inputState" class="form-label">Provincia</label>
+            <label for="provincia" class="form-label">Provincia</label>
             <select id="provincia" class="form-select" formControlName="provincia" required>
                 <option selected>Seleccionar</option>
                 <option>Córdoba</option>
@@ -67,9 +67,6 @@
         </div>
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Registrarse</button>
-        </div>
-        <div class="registro">
-            <span class="success-message" *ngIf="registro">Registro completado!</span>
         </div>
         
       

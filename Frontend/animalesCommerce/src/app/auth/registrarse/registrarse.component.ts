@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { RegistroService } from 'src/app/services/registro.service';
 
 @Component({
   selector: 'app-registrarse',
@@ -8,16 +9,10 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 
 export class RegistrarseComponent implements OnInit {
-  registro: boolean = false;
   registrarse: FormGroup = new FormGroup({});
 
-  constructor(private formBuilder: FormBuilder) { }
-
-
-  
-  ngOnInit(): void {
+  constructor(private formBuilder: FormBuilder, private registro: RegistroService) {
     this.registrarse = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$')]],
       passcon: ['', [Validators.required,Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$')]],
@@ -26,17 +21,29 @@ export class RegistrarseComponent implements OnInit {
       localidad: ['', [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
       provincia: ['', [Validators.required, Validators.pattern('[a-zA-ZÁ-Úá-ú ]*')]],
     })
+   }
+
+
+  
+  ngOnInit(): void {
+   
     
   }
 
   
-  submitForm() {
-    if (this.registrarse.invalid) {
-      return Object.values(this.registrarse.controls).forEach((control) => {
-        control.markAllAsTouched();
-        this.registro = true;
-    });
-  } 
+  submitForm(event:Event) {
+    event.preventDefault();
+    this.registro.signup(this.registrarse.value).subscribe({
+      next: (response) => {
+        if (response){
+          alert("Registro aprobado!");
+        } 
+      },
+      error: () => {
+        alert("Credenciales incorrectas...")
+      }
+    })
+    this.registrarse.markAllAsTouched()
 }
 }
 
