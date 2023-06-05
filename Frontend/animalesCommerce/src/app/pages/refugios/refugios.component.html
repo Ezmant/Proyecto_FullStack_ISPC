@@ -1,0 +1,16 @@
+<main>
+    <h1>Refugios</h1>
+    <p>Tenemos esta zona para que puedas visitar con tu mascota:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.7291104579926!2d-66.86042468370498!3d-29.4154011600544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbca6fc758e7%3A0x69b9c6797e4459f2!2sPlaza%209%20de%20Julio!5e0!3m2!1ses-419!2sar!4v1665610074091!5m2!1ses-419!2sar" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="tarjeta" *ngFor="let elemento of datos">
+        <div class="imagen"></div>
+        <div>
+            <p>{{elemento.nombre}}</p>
+            <p>{{elemento.direccion}}</p>
+            <p>{{elemento.ciudad}}</p>
+            <p>{{elemento.provincia}}</p>
+            <p>{{elemento.email}}</p>
+            <p>{{elemento.telefono}}</p>
+        </div>
+    </div>
+</main>

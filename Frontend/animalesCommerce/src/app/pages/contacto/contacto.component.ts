@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContactoService } from 'src/app/services/contacto.service';
 
@@ -11,6 +11,7 @@ import { ContactoService } from 'src/app/services/contacto.service';
 export class ContactoComponent {
   forma!: FormGroup;
   datos: any;
+
   constructor(
     private formbuilder: FormBuilder,
     private listContact: ContactoService
@@ -23,10 +24,10 @@ export class ContactoComponent {
   }
 
   verContact(): void {
-    this.listContact
-      .getContacto()
-      .subscribe((Response) => (this.datos = Response));
-    console.log(this.datos);
+    this.listContact.getContacto().subscribe((Response) => {
+      this.datos = Response;
+      console.log(this.datos);
+    });
   }
 
   get nombreNoValido() {

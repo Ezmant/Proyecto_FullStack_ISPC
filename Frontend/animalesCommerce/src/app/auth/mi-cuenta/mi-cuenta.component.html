@@ -1,0 +1,103 @@
+<div class="wrapper  mt-sm-5">
+    <h4 class="pb-4 border-bottom">Mi cuenta</h4>
+    <form name="formulario" id="formulario" action="" class="needs-validation"  method="post"
+        novalidate [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div class="py-2">
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" class="bg-light form-control" placeholder="{{lista[0].nombre}}" name="nombre" formControlName="nombre"
+                        required>
+                        <div *ngIf="nombre?.errors && nombre?.touched">
+                            <p *ngIf="nombre?.hasError('required')" class="text-danger">Ingrese un nombre</p>
+                            <p *ngIf="nombre?.errors?.['minlength']" class="text-danger">Minimo 5 caracteres</p>
+                        </div> 
+                </div>
+                <div class="col-md-6 pt-md-0 pt-3">
+                    <label for="dni">DNI</label>
+                    <input name="dni" type="number" class="bg-light form-control" placeholder="{{lista[0].dni}}" MIN=1000000 
+                    MAX=99999999 formControlName="dni" required>
+                        <div *ngIf="dni?.errors && dni?.touched">
+                            <p *ngIf="dni?.hasError('required')" class="text-danger">Ingrese un dni</p>
+                            <p *ngIf="dni?.errors?.['minlength']" class="text-danger">Minimo 7 digitos, máximo 8</p>
+                        </div> 
+                </div>
+
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="bg-light form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email" placeholder="{{lista[0].email}}">
+                    <div *ngIf="email?.errors && email?.touched">
+                          <p *ngIf="email?.hasError('required')" class="text-danger">Ingrese un email</p>
+                         <p *ngIf="email?.hasError('email')" class="text-danger">Mail inválido</p>
+                     </div>
+                </div>
+
+
+                <div class="col-md-6 pt-md-0 pt-3">
+                    <label for="phone">Teléfono</label>
+                    <input type="number" name="phone" class="bg-light form-control" placeholder="{{lista[0].telefono}}"
+                        min="100000" max="999999999" formControlName="telefono" required>
+                        <div *ngIf="telefono?.errors && telefono?.touched">
+                            <p *ngIf="telefono?.hasError('required')" class="text-danger">Ingrese un número de teléfono</p>
+                            <p *ngIf="telefono?.errors?.['minlength']" class="text-danger">Minimo 7 y máximo 8 digitos</p>
+                        </div>
+                    <span id="phone-text"></span>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <label for="country">Provincia</label>
+                    <select name="country" id="country" class="bg-light">
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">Catamarca</option>
+                        <option value="3">Chaco</option>
+                        <option value="4">Chubut</option>
+                        <option value="5">Córdoba</option>
+                        <option value="6">Corrientes</option>
+                        <option value="7">Entre Rios</option>
+                        <option value="8">Formosa</option>
+                        <option value="9">Jujuy</option>
+                        <option value="10">La Pampa</option>
+                        <option value="11">La Rioja</option>
+                        <option value="12">Mendoza</option>
+                        <option value="13">Misiones</option>
+                        <option value="14">Neuquén</option>
+                        <option value="15">Río Negro</option>
+                        <option value="16">Salta</option>
+                        <option value="17">San Juan</option>
+                        <option value="18">San Luis</option>
+                        <option value="19">Santa Cruz</option>
+                        <option value="20">Santa Fe</option>
+                        <option value="21">Santiago del Estero</option>
+                        <option value="22">Tierra del Fuego</option>
+                        <option value="23">Tucumán</option>
+                    </select>
+                </div>
+                <div class="col-md-6 pt-md-0 pt-3">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad" class="bg-light form-control" placeholder="{{lista[0].ciudad}}" minlength="3"
+                        maxlength="20" formControlName="ciudad" required>
+                        <div *ngIf="ciudad?.errors && ciudad?.touched">
+                            <p *ngIf="ciudad?.hasError('required')" class="text-danger">Ingrese una ciudad</p>
+                            <p *ngIf="ciudad?.errors?.['minlength']" class="text-danger">Minimo 5 caracteres</p>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3">
+                <label for="postal">Código Postal</label>
+                <input type="number" name="postal" class="bg-light form-control" placeholder="{{lista[0].codigoPostal}}" max="9999" min="0"
+                    formControlName="codigoPostal" required>
+                    <div *ngIf="codigoPostal?.errors && codigoPostal?.touched">
+                        <p *ngIf="codigoPostal?.hasError('required')" class="text-danger">Ingrese código postal</p>
+                        <p *ngIf="codigoPostal?.errors?.['minlength']" class="text-danger">Minimo 4 caracteres</p>
+                    </div>
+            </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <button class="btn btn-primary" type="submit">Guardar</button>
+            <span id="dinamic-text"></span>
+        </div>
+    </form>
+</div>

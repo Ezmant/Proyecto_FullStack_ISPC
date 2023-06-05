@@ -136,5 +136,15 @@
       "titulo": "Gatitos Bebes",
       "descripcion": "Tienen 45 días, son todos machos y buscan una familia que les de mucho amor. Están desparasitados, comen solos y usan piedritas sanitarias."
     }
+  ],
+  "miCuenta": [
+    {
+      "nombre":"Pedro Jimenez",
+      "dni":"20304567",
+      "email":"pedroj@gmail.com",
+      "telefono":"354256789",
+      "ciudad" : "Rosario",
+      "codigoPostal" : "1689"
+    }
   ]
 }
