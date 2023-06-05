@@ -1,8 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup} from '@angular/forms';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { RegistroService } from 'src/app/services/registro.service';
 
 @Component({
   selector: 'app-registrarse',
@@ -10,7 +8,47 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./registrarse.component.css']
 })
 
+export class RegistrarseComponent implements OnInit {
+  registrarse: FormGroup = new FormGroup({});
 
+  constructor(private formBuilder: FormBuilder, private registro: RegistroService) {
+    this.registrarse = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$')]],
+      passcon: ['', [Validators.required,Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$')]],
+      dni: ['', [Validators.required, Validators.pattern('^[0-9]{8}$')]],
+      direccion: ['', [Validators.required, Validators.pattern('^(?=.*\\d)(?=.*[a-zA-Z]).{3,}$')]],
+      localidad: ['', [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
+      provincia: ['', [Validators.required, Validators.pattern('[a-zA-ZÁ-Úá-ú ]*')]],
+    })
+   }
+
+
+  
+  ngOnInit(): void {
+   
+    
+  }
+
+  
+  submitForm(event:Event) {
+    event.preventDefault();
+    this.registro.signup(this.registrarse.value).subscribe({
+      next: (response) => {
+        if (response){
+          alert("Registro aprobado!");
+        } 
+      },
+      error: () => {
+        alert("Credenciales incorrectas...")
+      }
+    })
+    this.registrarse.markAllAsTouched()
+}
+}
+
+
+/*
 export class RegistrarseComponent {
 
   registrarse: FormGroup;
@@ -121,11 +159,4 @@ if (!this.invalidEmail && !this.invalidPass && !this.invalidPasscon && !this.inv
   this.formValid = false;
   }
 }
-
-  submitForm(event:Event){
-    console.log(this.registrarse.value)
-    event.preventDefault();
-    this.validarForm()
-  }
-  
-}
+*/

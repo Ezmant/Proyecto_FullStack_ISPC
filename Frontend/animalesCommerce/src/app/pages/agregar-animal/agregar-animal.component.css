@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    padding: 30px 50px;
+    margin: 10px auto;
+    max-width: 600px;
+}
+h4{
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+
+label{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+    padding-left: 3px;
+}
+
+input[placeholder]{
+    font-weight: 500;
+    padding: 9px;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid #006075;
+}
+.ng-valid:not(form).ng-touched{
+    border-left: 5px solid green;
+}
+
+.ng-invalid:not(form).ng-touched{
+    border-left: 5px solid red;
+}
+select{
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 40px;
+    padding: 5px 10px;
+}
+
+select:focus{
+    outline: none;
+}
+.button{
+    background-color: #fff;
+    color: #006075;
+
+}
+.button:hover{
+    background-color: #006075;
+    color: #fff;
+    
+}
+.btn-primary{
+    background-color: #023B48;
+}
+@media(max-width:576px){
+    .wrapper{
+        padding: 25px 20px;
+    }
+    #deactivate{
+        line-height: 18px;
+    }
+}
+  

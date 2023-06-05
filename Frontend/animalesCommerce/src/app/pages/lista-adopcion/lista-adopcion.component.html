@@ -1,5 +1,6 @@
 <main>
-    <h1>Animales en Adopcion</h1>
+        <h1 >Animales en Adopcion</h1>
+    
 
     <div class="filtros">
         <p>Filtrar:</p>
@@ -24,19 +25,26 @@
                 <option value="2">1 o 2 Años</option>
                 <option value="3">Mas de 3 años</option>
             </select>
-            <div>
+            <div >
                 <button type="button" class="btn btn-success btn-sm">Filtrar</button>
             </div>
             
         </form>
     </div>
+
+    <a routerLink="/agregarAnimal" class="btn btn-success btn-sm" style="float: right; padding: 10px;"><i class="fa-solid fa-plus fa-lg"></i> Agregar animal</a> 
+
     <div class="productos">
-        <div class="card" style="width: 18rem;" *ngFor="let elements of lista">
-            <img src="../../../assets/img/gato-lola.webp" class="card-img-top" alt="...">
+        
+        <div class="card" style="width: 18rem;" *ngFor="let element of lista">
+            <img [src]="element.img" class="card-img-top" alt="Foto animal">
             <div class="card-body">
-                <h5 class="card-title">{{elements.titulo}}</h5>
-                <p class="card-text">{{elements.descripcion}}</p>
+                <h5 class="card-title"><b>Nombre:</b> {{element.nombre}}</h5>
+                <p class="card-text"><b> Edad aprox.:</b> {{element.edad}} años</p>
+                <p class="card-text"><b>Tamaño:</b> {{element.tamano}}</p>
                 <a routerLink="/cart" class="btn btn-primary">Añadir al Carrito</a>
+                <a routerLink="#"><i class="fa-sharp fa-solid fa-pen-to-square fa-lg" style="margin-left: 15px; color: green;"></i></a>
+                <i class="fa-sharp fa-solid fa-trash fa-lg" style="margin-left: 15px; color: red;"></i>
             </div>
         </div>
         
