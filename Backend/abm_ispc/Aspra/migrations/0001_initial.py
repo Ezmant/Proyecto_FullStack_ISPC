@@ -8,141 +8,257 @@ import django.utils.timezone
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
-        ('auth', '0012_alter_user_first_name_max_length'),
+        ("auth", "0012_alter_user_first_name_max_length"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Refugio',
+            name="Refugio",
             fields=[
-                ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('nombre', models.CharField(max_length=45)),
-                ('telefono', models.CharField(max_length=45)),
-                ('email', models.CharField(max_length=45)),
-                ('direccion', models.CharField(max_length=45)),
-                ('ciudad', models.CharField(max_length=45)),
-                ('provincia', models.CharField(max_length=45)),
+                ("id", models.AutoField(primary_key=True, serialize=False)),
+                ("nombre", models.CharField(max_length=45)),
+                ("telefono", models.CharField(max_length=45)),
+                ("email", models.CharField(max_length=45)),
+                ("direccion", models.CharField(max_length=45)),
+                ("ciudad", models.CharField(max_length=45)),
+                ("provincia", models.CharField(max_length=45)),
             ],
             options={
-                'verbose_name': 'Refugio',
-                'verbose_name_plural': 'Refugios',
-                'db_table': 'Refugio',
+                "verbose_name": "Refugio",
+                "verbose_name_plural": "Refugios",
+                "db_table": "Refugio",
             },
         ),
         migrations.CreateModel(
-            name='TipoAnimal',
+            name="TipoAnimal",
             fields=[
-                ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('tipo', models.CharField(max_length=45)),
+                ("id", models.AutoField(primary_key=True, serialize=False)),
+                ("tipo", models.CharField(max_length=45)),
             ],
             options={
-                'verbose_name': 'TipoAnimal',
-                'verbose_name_plural': 'TiposAnimales',
-                'db_table': 'TipoAnimal',
+                "verbose_name": "TipoAnimal",
+                "verbose_name_plural": "TiposAnimales",
+                "db_table": "TipoAnimal",
             },
         ),
         migrations.CreateModel(
-            name='Usuario',
+            name="Usuario",
             fields=[
-                ('dni', models.CharField(max_length=45, primary_key=True, serialize=False)),
-                ('nombre', models.CharField(max_length=45)),
-                ('contrasena', models.CharField(max_length=45)),
-                ('telefono', models.CharField(max_length=45)),
-                ('email', models.CharField(max_length=45)),
-                ('direccion', models.CharField(max_length=45)),
-                ('ciudad', models.CharField(max_length=45)),
-                ('provincia', models.CharField(max_length=45)),
+                (
+                    "dni",
+                    models.CharField(max_length=45, primary_key=True, serialize=False),
+                ),
+                ("nombre", models.CharField(max_length=45)),
+                ("contrasena", models.CharField(max_length=45)),
+                ("telefono", models.CharField(max_length=45)),
+                ("email", models.CharField(max_length=45)),
+                ("direccion", models.CharField(max_length=45)),
+                ("ciudad", models.CharField(max_length=45)),
+                ("provincia", models.CharField(max_length=45)),
             ],
             options={
-                'verbose_name': 'Usuario',
-                'verbose_name_plural': 'Usuarios',
-                'db_table': 'Usuario',
+                "verbose_name": "Usuario",
+                "verbose_name_plural": "Usuarios",
+                "db_table": "Usuario",
             },
         ),
         migrations.CreateModel(
-            name='CustomUser',
+            name="CustomUser",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('password', models.CharField(max_length=128, verbose_name='password')),
-                ('last_login', models.DateTimeField(blank=True, null=True, verbose_name='last login')),
-                ('is_superuser', models.BooleanField(default=False, help_text='Designates that this user has all permissions without explicitly assigning them.', verbose_name='superuser status')),
-                ('username', models.CharField(error_messages={'unique': 'A user with that username already exists.'}, help_text='Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.', max_length=150, unique=True, validators=[django.contrib.auth.validators.UnicodeUsernameValidator()], verbose_name='username')),
-                ('first_name', models.CharField(blank=True, max_length=150, verbose_name='first name')),
-                ('last_name', models.CharField(blank=True, max_length=150, verbose_name='last name')),
-                ('is_staff', models.BooleanField(default=False, help_text='Designates whether the user can log into this admin site.', verbose_name='staff status')),
-                ('is_active', models.BooleanField(default=True, help_text='Designates whether this user should be treated as active. Unselect this instead of deleting accounts.', verbose_name='active')),
-                ('date_joined', models.DateTimeField(default=django.utils.timezone.now, verbose_name='date joined')),
-                ('email', models.EmailField(max_length=150, unique=True)),
-                ('groups', models.ManyToManyField(blank=True, help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.', related_name='user_set', related_query_name='user', to='auth.group', verbose_name='groups')),
-                ('user_permissions', models.ManyToManyField(blank=True, help_text='Specific permissions for this user.', related_name='user_set', related_query_name='user', to='auth.permission', verbose_name='user permissions')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("password", models.CharField(max_length=128, verbose_name="password")),
+                (
+                    "last_login",
+                    models.DateTimeField(
+                        blank=True, null=True, verbose_name="last login"
+                    ),
+                ),
+                (
+                    "is_superuser",
+                    models.BooleanField(
+                        default=False,
+                        help_text="Designates that this user has all permissions without explicitly assigning them.",
+                        verbose_name="superuser status",
+                    ),
+                ),
+                (
+                    "username",
+                    models.CharField(
+                        error_messages={
+                            "unique": "A user with that username already exists."
+                        },
+                        help_text="Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.",
+                        max_length=150,
+                        unique=True,
+                        validators=[
+                            django.contrib.auth.validators.UnicodeUsernameValidator()
+                        ],
+                        verbose_name="username",
+                    ),
+                ),
+                (
+                    "first_name",
+                    models.CharField(
+                        blank=True, max_length=150, verbose_name="first name"
+                    ),
+                ),
+                (
+                    "last_name",
+                    models.CharField(
+                        blank=True, max_length=150, verbose_name="last name"
+                    ),
+                ),
+                (
+                    "is_staff",
+                    models.BooleanField(
+                        default=False,
+                        help_text="Designates whether the user can log into this admin site.",
+                        verbose_name="staff status",
+                    ),
+                ),
+                (
+                    "is_active",
+                    models.BooleanField(
+                        default=True,
+                        help_text="Designates whether this user should be treated as active. Unselect this instead of deleting accounts.",
+                        verbose_name="active",
+                    ),
+                ),
+                (
+                    "date_joined",
+                    models.DateTimeField(
+                        default=django.utils.timezone.now, verbose_name="date joined"
+                    ),
+                ),
+                ("email", models.EmailField(max_length=150, unique=True)),
+                (
+                    "groups",
+                    models.ManyToManyField(
+                        blank=True,
+                        help_text="The groups this user belongs to. A user will get all permissions granted to each of their groups.",
+                        related_name="user_set",
+                        related_query_name="user",
+                        to="auth.group",
+                        verbose_name="groups",
+                    ),
+                ),
+                (
+                    "user_permissions",
+                    models.ManyToManyField(
+                        blank=True,
+                        help_text="Specific permissions for this user.",
+                        related_name="user_set",
+                        related_query_name="user",
+                        to="auth.permission",
+                        verbose_name="user permissions",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'user',
-                'verbose_name_plural': 'users',
-                'abstract': False,
+                "verbose_name": "user",
+                "verbose_name_plural": "users",
+                "abstract": False,
             },
             managers=[
-                ('objects', django.contrib.auth.models.UserManager()),
+                ("objects", django.contrib.auth.models.UserManager()),
             ],
         ),
         migrations.CreateModel(
-            name='Veterinario',
+            name="Veterinario",
             fields=[
-                ('matricula', models.CharField(max_length=45, primary_key=True, serialize=False)),
-                ('nombre', models.CharField(max_length=45)),
-                ('telefono', models.CharField(max_length=45)),
-                ('email', models.CharField(max_length=45)),
-                ('id_refugio2', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Aspra.refugio')),
+                (
+                    "matricula",
+                    models.CharField(max_length=45, primary_key=True, serialize=False),
+                ),
+                ("nombre", models.CharField(max_length=45)),
+                ("telefono", models.CharField(max_length=45)),
+                ("email", models.CharField(max_length=45)),
+                (
+                    "id_refugio2",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="Aspra.refugio"
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Veterinario',
-                'verbose_name_plural': 'Veterinarios',
-                'db_table': 'Veterinario',
+                "verbose_name": "Veterinario",
+                "verbose_name_plural": "Veterinarios",
+                "db_table": "Veterinario",
             },
         ),
         migrations.CreateModel(
-            name='UsuarioAnimales',
+            name="UsuarioAnimales",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('id_animal1', models.CharField(max_length=45)),
-                ('dni_usuario2', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Aspra.usuario')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("id_animal1", models.CharField(max_length=45)),
+                (
+                    "dni_usuario2",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="Aspra.usuario"
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'UsuarioAnimales',
-                'verbose_name_plural': 'UsuarioAnimales',
-                'db_table': 'UsuarioAnimales',
+                "verbose_name": "UsuarioAnimales",
+                "verbose_name_plural": "UsuarioAnimales",
+                "db_table": "UsuarioAnimales",
             },
         ),
         migrations.CreateModel(
-            name='Reporte',
+            name="Reporte",
             fields=[
-                ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('direccion', models.CharField(max_length=45)),
-                ('motivo', models.CharField(max_length=45)),
-                ('descripcion', models.TextField(max_length=150)),
-                ('dni_usuario1', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Aspra.usuario')),
+                ("id", models.AutoField(primary_key=True, serialize=False)),
+                ("direccion", models.CharField(max_length=45)),
+                ("motivo", models.CharField(max_length=45)),
+                ("descripcion", models.TextField(max_length=150)),
+                (
+                    "dni_usuario1",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="Aspra.usuario"
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Reporte',
-                'verbose_name_plural': 'Reportes',
-                'db_table': 'Reporte',
+                "verbose_name": "Reporte",
+                "verbose_name_plural": "Reportes",
+                "db_table": "Reporte",
             },
         ),
         migrations.CreateModel(
-            name='Donacion',
+            name="Donacion",
             fields=[
-                ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('monto', models.PositiveIntegerField()),
-                ('dni_usuario3', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Aspra.usuario')),
+                ("id", models.AutoField(primary_key=True, serialize=False)),
+                ("monto", models.PositiveIntegerField()),
+                (
+                    "dni_usuario3",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="Aspra.usuario"
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Donacion',
-                'verbose_name_plural': 'Donaciones',
-                'db_table': 'Donacion',
+                "verbose_name": "Donacion",
+                "verbose_name_plural": "Donaciones",
+                "db_table": "Donacion",
             },
         ),
     ]
