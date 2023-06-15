@@ -6,5 +6,5 @@ urlpatterns = [
     path('auth/logout/', LogoutView.as_view(), name='auth_logout'),
     path('auth/signup/', SignupView.as_view(), name='auth_signup'),
     path('pages/animales/', VerAnimalesView.as_view({'get': 'list'}), name='pages_VerAnimales'),
-    path('pages/agregarAnimal/', AgregarAnimalView.as_view(), name='pages_agregarAnimal')
+    path('pages/agregarAnimal/', AgregarAnimalView.as_view(), name='pages_agregarAnimal'),
 ]
