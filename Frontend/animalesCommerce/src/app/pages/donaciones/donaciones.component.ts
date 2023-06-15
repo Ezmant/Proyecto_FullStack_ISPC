@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DonacionesService } from 'src/app/services/donaciones.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { DonacionesService } from 'src/app/services/donaciones.service';
   templateUrl: './donaciones.component.html',
   styleUrls: ['./donaciones.component.css']
 })
-export class DonacionesComponent {
+export class DonacionesComponent implements OnInit {
 
   datos:any;
  constructor (private listPersonas: DonacionesService){}
@@ -20,7 +20,6 @@ verDonaciones():void{
   this.listPersonas.getDonaciones().subscribe({
     next:(response)=>(
       this.datos=response
-       //console.log(this.datos)
       ),
     error: (errorResponse)=> (
       console.error(errorResponse)
