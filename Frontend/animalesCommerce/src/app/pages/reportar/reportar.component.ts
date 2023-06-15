@@ -13,7 +13,9 @@ import { Validators } from '@angular/forms';
 export class ReportarComponent implements OnInit {
   form;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log("El componente reportar se ha inicializado")
+  }
   
   constructor(private FormBuilder : FormBuilder){
     this.form = this.FormBuilder.group({
