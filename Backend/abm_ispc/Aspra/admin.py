@@ -43,7 +43,7 @@ class VeterinariosAdmin(admin.ModelAdmin):
 
 
 class DonacionAdmin(admin.ModelAdmin):
-    list_display = ("id", "monto")
+    list_display = ("id", "Usuario", "monto")
 
 
 class ReporteAdmin(admin.ModelAdmin):

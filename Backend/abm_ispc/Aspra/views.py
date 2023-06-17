@@ -3,8 +3,13 @@ from rest_framework import status, generics, viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAdminUser, AllowAny
-from .serializers import UserSerializer, AnimalesSerializer, ContactoSerializer
-from .models import Animales, Contacto
+from .serializers import (
+    UserSerializer,
+    AnimalesSerializer,
+    ContactoSerializer,
+    DonacionSerializer,
+)
+from .models import Animales, Contacto, Donacion
 
 
 class SignupView(generics.CreateAPIView):
@@ -38,6 +43,12 @@ class VerContactoView(viewsets.ReadOnlyModelViewSet):
     permission_classes = [AllowAny]
     queryset = Contacto.objects.all()
     serializer_class = ContactoSerializer
+
+
+class VerDonacionView(viewsets.ReadOnlyModelViewSet):
+    permission_classes = [AllowAny]
+    queryset = Donacion.objects.all()
+    serializer_class = DonacionSerializer
 
 
 class AgregarAnimalView(APIView):
