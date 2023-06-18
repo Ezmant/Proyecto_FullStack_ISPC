@@ -6,7 +6,7 @@ from django.contrib.auth.models import Group
 
 @admin.register(get_user_model())
 class CustomUserAdmin(UserAdmin):
-    pass
+    list_display = ("id", "username", "email")
 
 
 admin.site.unregister(Group)
