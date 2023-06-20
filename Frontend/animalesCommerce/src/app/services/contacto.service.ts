@@ -9,6 +9,6 @@ export class ContactoService {
   constructor(private http: HttpClient) {}
 
   getContacto(): Observable<any> {
-    return this.http.get('http://localhost:3000/contacto');
+    return this.http.get('http://127.0.0.1:8000/api/pages/contacto/');
   }
 }

@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Estudios\ispc\2°año\Programador Web\Proyecto Final\2 - GIT - Proyecto_FullStack_ISPC\Backend\django"
+VIRTUAL_ENV="C:\Users\Mi Equipo\Desktop\PROYECTO JUNIO\Proyecto_FullStack_ISPC\Backend\django"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
