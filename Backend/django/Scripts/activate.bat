@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\Estudios\ispc\2°año\Programador Web\Proyecto Final\2 - GIT - Proyecto_FullStack_ISPC\Backend\django
+set VIRTUAL_ENV=C:\Users\jorda\Desktop\1 - PC\2°año\Programador Web\Proyecto Final\Proyecto_FullStack_ISPC\Backend\django
 
 if not defined PROMPT set PROMPT=$P$G
 
