@@ -7,7 +7,6 @@ from .views import (
     AgregarAnimalView,
     VerContactoView,
     VerDonacionView,
-    AgregarDonacionView,
 )
 
 urlpatterns = [
@@ -31,10 +30,5 @@ urlpatterns = [
     ),
     path(
         "pages/agregarAnimal/", AgregarAnimalView.as_view(), name="pages_agregarAnimal"
-    ),
-    path(
-        "pages/agregarDonacion/",
-        AgregarDonacionView.as_view(),
-        name="pages_agregarDonacion",
     ),
 ]

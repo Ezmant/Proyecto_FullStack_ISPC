@@ -58,7 +58,7 @@ class Veterinario(models.Model):
 class Donacion(models.Model):
     id = models.AutoField(primary_key=True)
     monto = models.PositiveIntegerField()
-    usuario = models.ForeignKey("CustomUser", to_field="id", on_delete=models.CASCADE)
+    Usuario = models.ForeignKey("CustomUser", to_field="id", on_delete=models.CASCADE)
 
     class Meta:
         db_table = "Donacion"
@@ -95,13 +95,9 @@ class Reporte(models.Model):
 
 class Contacto(models.Model):
     id_contacto = models.AutoField(primary_key=True)
-    nombre = models.CharField(max_length=45)
+    horario = models.CharField(max_length=80)
+    celular = models.PositiveIntegerField()
     email = models.EmailField(null=True, blank=True)
-    mensaje = models.CharField(max_length=255)
-    id_usuario = models.ForeignKey(
-        "contacto", to_field="id_usuario", on_delete=models.CASCADE
-    )
-    
 
     class Meta:
         db_table = "Contacto"
@@ -109,10 +105,10 @@ class Contacto(models.Model):
         verbose_name_plural = "Contactos"
 
     def __unicode__(self):
-        return self.mensaje
+        return self.horario
 
     def __str__(self):
-        return self.mensaje
+        return self.horario
 
 
 class TipoAnimal(models.Model):
