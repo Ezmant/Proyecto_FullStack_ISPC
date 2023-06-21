@@ -13,7 +13,7 @@ import { RefugiosComponent } from './pages/refugios/refugios.component';
 import { VeterinariosComponent } from './pages/veterinarios/veterinarios.component';
 import { LoguearseComponent } from './auth/loguearse/loguearse.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AgradecimientosComponent } from './pages/agradecimientos/agradecimientos.component';
+import { DonacionesComponent } from './pages/donaciones/donaciones.component';
 import { ReportarComponent } from './pages/reportar/reportar.component';
 import { RegistrarseComponent } from './auth/registrarse/registrarse.component';
 import { FinalizarAdopcionComponent } from './pages/finalizar-adopcion/finalizar-adopcion.component';
@@ -30,7 +30,7 @@ const appRoutes: Routes = [
   { path: 'refugios', component: RefugiosComponent },
   { path: 'veterinarios', component: VeterinariosComponent },
   { path: 'loguearse', component: LoguearseComponent },
-  { path: 'agradecimientos', component: AgradecimientosComponent },
+  { path: 'donaciones', component: DonacionesComponent },
   { path: 'reportar', component: ReportarComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'registrarse', component: RegistrarseComponent },
@@ -52,7 +52,7 @@ const appRoutes: Routes = [
     RefugiosComponent,
     VeterinariosComponent,
     LoguearseComponent,
-    AgradecimientosComponent,
+    DonacionesComponent,
     ReportarComponent,
     RegistrarseComponent,
     FinalizarAdopcionComponent,
