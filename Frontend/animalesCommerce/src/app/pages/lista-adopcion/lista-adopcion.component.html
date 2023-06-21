@@ -1,8 +1,6 @@
 <main>
-    <div style="display: flex; align-content: center;">
         <h1 >Animales en Adopcion</h1>
-        <a routerLink="/agregarAnimal" class="btn btn-success btn-sm" style="padding: 10px; align-self: center; margin-left: 20px;"><i class="fa-solid fa-plus fa-lg"></i> Agregar animal</a>
-    </div>
+    
 
     <div class="filtros">
         <p>Filtrar:</p>
@@ -34,17 +32,19 @@
         </form>
     </div>
 
-     
+    <a routerLink="/agregarAnimal" class="btn btn-success btn-sm" style="float: right; padding: 10px;"><i class="fa-solid fa-plus fa-lg"></i> Agregar animal</a> 
 
     <div class="productos">
         
         <div class="card" style="width: 18rem;" *ngFor="let element of lista">
-            <img [src]="element.img" class="card-img-top " alt="Foto animal">
+            <img [src]="element.img" class="card-img-top" alt="Foto animal">
             <div class="card-body">
                 <h5 class="card-title"><b>Nombre:</b> {{element.nombre}}</h5>
                 <p class="card-text"><b> Edad aprox.:</b> {{element.edad}} años</p>
                 <p class="card-text"><b>Tamaño:</b> {{element.tamano}}</p>
                 <a routerLink="/cart" class="btn btn-primary">Añadir al Carrito</a>
+                <a routerLink="#"><i class="fa-sharp fa-solid fa-pen-to-square fa-lg" style="margin-left: 15px; color: green;"></i></a>
+                <i class="fa-sharp fa-solid fa-trash fa-lg" style="margin-left: 15px; color: red;"></i>
             </div>
         </div>
         
