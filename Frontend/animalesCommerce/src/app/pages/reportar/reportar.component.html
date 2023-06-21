@@ -3,7 +3,7 @@
         <label for="exampleFormControlInput1" class="form-label">Email</label>
         <input type="email" id="exampleFormControlInput1" placeholder="name@example.com" formControlName="email">
         <div *ngIf="email?.errors && email?.touched">
-            <p *ngIf="email?.hasError('required')" class="text-danger">Ingrese un correo electrónico</p>
+            <p *ngIf="invalidEmail && email?.hasError('required')" class="text-danger">Ingrese un correo electrónico</p>
             <p *ngIf="email?.hasError('email')" class="text-danger">Ingrese un email valido</p>
         </div>
     </div>
@@ -18,7 +18,7 @@
         <label for="formGroupExampleInput2" class="form-label">Dirección</label>
         <input type="text" formControlName="direccion" id="formGroupExampleInput2" placeholder="">
         <div *ngIf="direccion?.errors && direccion?.touched">
-            <p *ngIf="direccion?.hasError('required')" class="text-danger">Ingrese una dirección</p>
+            <p *ngIf="invalidAddress && direccion?.hasError('required')" class="text-danger">Ingrese una dirección</p>
             <p *ngIf="direccion?.hasError('direccion')" class="text-danger">Ingrese una direccion valida</p>
         </div>
     </div>
@@ -26,13 +26,11 @@
         <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
         <textarea formControlName="descripcion" id="exampleFormControlTextarea1" rows="3"></textarea>
         <div *ngIf="descripcion?.errors && descripcion?.touched">
-            <p *ngIf="descripcion?.hasError('required')" class="text-danger">Ingrese una descripcion</p>
+            <p *ngIf="invalidDescription && descripcion?.hasError('required')" class="text-danger">Ingrese una descripcion</p>
             <p *ngIf="descripcion?.hasError('descripcion')" class="text-danger">Ingrese una descripcion</p>
         </div>
     </div>
     <button type="submit" class="container btn btn-primary my-3" style="background-color: #023B48;">Enviar
         solicitud</button>
-    <!--<p *ngIf="submitForm" class="text-success">Reporte aprobado</p> -->
-
-
+    <p *ngIf="formValid" style="color:green">Reporte aprobado</p>
 </form>
