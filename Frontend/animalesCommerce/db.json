@@ -6,6 +6,7 @@
       "email": "aspraproteccionanimal@gmail.com"
     }
   ],
+  
   "donaciones": [
     {"nombre": "Martin Guzmán de La Fuente","monto":"100"},
     {"nombre": "Griselda Guzman","monto":"1000"},
@@ -14,13 +15,34 @@
     {"nombre": "Celeste Reyna","monto":"1300"},
     {"nombre": "Abril Noemi Perez","monto":"800"},
     {"nombre": "Raul Alejando Lopez","monto":"950"}
+
   ],
   "veterinarios": [
-    {"nombre":"Martin Guzman", "email":"MGuzman@gmail.com", "telefono":"1565458789"},
-    {"nombre":"Maria Lopez", "email":"MLopez@gmail.com", "telefono":"260425624"},
-    {"nombre":"Roberto Giordano", "email":"RGiordano@gmail.com", "telefono":"145815656"},
-    {"nombre":"Julian Cazal", "email":"JCazal@gmail.com", "telefono":"354222256"},
-    {"nombre":"Juliana Santilla", "email":"JSantillan@gmail.com", "telefono":"1152565538"}
+    {
+      "nombre": "Martin Guzman",
+      "email": "MGuzman@gmail.com",
+      "telefono": "1565458789"
+    },
+    {
+      "nombre": "Maria Lopez",
+      "email": "MLopez@gmail.com",
+      "telefono": "260425624"
+    },
+    {
+      "nombre": "Roberto Giordano",
+      "email": "RGiordano@gmail.com",
+      "telefono": "145815656"
+    },
+    {
+      "nombre": "Julian Cazal",
+      "email": "JCazal@gmail.com",
+      "telefono": "354222256"
+    },
+    {
+      "nombre": "Juliana Santilla",
+      "email": "JSantillan@gmail.com",
+      "telefono": "1152565538"
+    }
   ],
   "Refuguios": [
     {
@@ -96,14 +118,13 @@
       "provincia": "Buenos Aires"
     },
     {
-        "nombre": "Refugio Peludos del Sur",
-        "telefono": "444777999",
-        "email": "info@peludosdelsur.org",
-        "direccion": "Calle Principal 456",
-        "ciudad": "Neuquén",
-        "provincia": "Neuquén"      
+      "nombre": "Refugio Peludos del Sur",
+      "telefono": "444777999",
+      "email": "info@peludosdelsur.org",
+      "direccion": "Calle Principal 456",
+      "ciudad": "Neuquén",
+      "provincia": "Neuquén"
     }
-    
   ],
   "listaAdopcion": [
     {
@@ -139,12 +160,12 @@
   ],
   "miCuenta": [
     {
-      "nombre":"Pedro Jimenez",
-      "dni":"20304567",
-      "email":"pedroj@gmail.com",
-      "telefono":"354256789",
-      "ciudad" : "Rosario",
-      "codigoPostal" : "1689"
+      "nombre": "Pedro Jimenez",
+      "dni": "20304567",
+      "email": "pedroj@gmail.com",
+      "telefono": "354256789",
+      "ciudad": "Rosario",
+      "codigoPostal": "1689"
     }
   ]
 }

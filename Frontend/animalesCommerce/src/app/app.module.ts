@@ -20,7 +20,7 @@ import { FinalizarAdopcionComponent } from './pages/finalizar-adopcion/finalizar
 import { ListaAdopcionComponent } from './pages/lista-adopcion/lista-adopcion.component';
 import { CartComponent } from './pages/cart/cart.component';
 /* import { ProductDetailsComponent} from './pages/product-details/product-details.component'; */
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { MiCuentaComponent } from './auth/mi-cuenta/mi-cuenta.component';
 import { AgregarAnimalComponent } from './pages/agregar-animal/agregar-animal.component';
 
@@ -39,7 +39,6 @@ const appRoutes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'miCuenta', component: MiCuentaComponent },
   { path: 'agregarAnimal', component: AgregarAnimalComponent },
-
 ];
 
 @NgModule({
@@ -67,7 +66,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
