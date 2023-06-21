@@ -10,6 +10,7 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>ASPRA - Protección Animal</title>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
   <script src="https://kit.fontawesome.com/32b882a6dd.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,10 +24,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <app-root></app-root>
+  <script>
+
+    const mp = new MercadoPago('TEST-35e14060-967e-4910-9ae0-f23066236a72', {
+      locale: 'es-AR'
+    });
+    const bricksBuilder = mp.bricks();
+
+
+
+    mp.bricks().create("wallet", "wallet_container", {
+      initialization: {
+        preferenceId: "<preference.id>",
+        redirectMode: "modal"
+      },
+    });
+
+
+    mp.checkout({
+      preference: {
+        id: '<preference.response>',
+
+      },
+      render: {
+        container: '.checkout-btn',
+        label: 'Pagar con Mercado Pago',
+        redirectMode: "modal"
+      }
+    })
+
+      ;
+
+
+  </script>
 </body>
 
 </html>

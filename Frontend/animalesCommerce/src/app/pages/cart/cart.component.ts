@@ -9,7 +9,7 @@ export interface Product {
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
   cartItems: Product[] = [];
@@ -29,4 +29,3 @@ export class CartComponent {
     return this.cartItems.reduce((total, product) => total + product.price, 0);
   }
 }
-

@@ -1,0 +1,12 @@
+
+Backend/django/Lib/site-packages/pkg_resources/_vendor/__pycache__/zipp.cpython-310.pyc
+Backend/django/Lib/site-packages/pkg_resources/_vendor/importlib_resources/__pycache__/_itertools.cpython-310.pyc
+Backend/django/Lib/site-packages/pkg_resources/_vendor/jaraco/__init__.py
+*.py
+*.py
+Backend/django/Lib/site-packages/setuptools/logging.py
+Backend/django/Lib/site-packages/setuptools/config/expand.py
+*.py
+*.py
+Backend/django/Lib/site-packages/Django-4.2.1.dist-info/INSTALLER
+Backend/django/Lib/site-packages/Django-4.2.1.dist-info/LICENSE

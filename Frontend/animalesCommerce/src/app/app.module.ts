@@ -13,14 +13,14 @@ import { RefugiosComponent } from './pages/refugios/refugios.component';
 import { VeterinariosComponent } from './pages/veterinarios/veterinarios.component';
 import { LoguearseComponent } from './auth/loguearse/loguearse.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AgradecimientosComponent } from './pages/agradecimientos/agradecimientos.component';
+import { DonacionesComponent } from './pages/donaciones/donaciones.component';
 import { ReportarComponent } from './pages/reportar/reportar.component';
 import { RegistrarseComponent } from './auth/registrarse/registrarse.component';
 import { FinalizarAdopcionComponent } from './pages/finalizar-adopcion/finalizar-adopcion.component';
 import { ListaAdopcionComponent } from './pages/lista-adopcion/lista-adopcion.component';
 import { CartComponent } from './pages/cart/cart.component';
 /* import { ProductDetailsComponent} from './pages/product-details/product-details.component'; */
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { MiCuentaComponent } from './auth/mi-cuenta/mi-cuenta.component';
 import { AgregarAnimalComponent } from './pages/agregar-animal/agregar-animal.component';
 
@@ -30,7 +30,7 @@ const appRoutes: Routes = [
   { path: 'refugios', component: RefugiosComponent },
   { path: 'veterinarios', component: VeterinariosComponent },
   { path: 'loguearse', component: LoguearseComponent },
-  { path: 'agradecimientos', component: AgradecimientosComponent },
+  { path: 'donaciones', component: DonacionesComponent },
   { path: 'reportar', component: ReportarComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'registrarse', component: RegistrarseComponent },
@@ -39,7 +39,6 @@ const appRoutes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'miCuenta', component: MiCuentaComponent },
   { path: 'agregarAnimal', component: AgregarAnimalComponent },
-
 ];
 
 @NgModule({
@@ -53,7 +52,7 @@ const appRoutes: Routes = [
     RefugiosComponent,
     VeterinariosComponent,
     LoguearseComponent,
-    AgradecimientosComponent,
+    DonacionesComponent,
     ReportarComponent,
     RegistrarseComponent,
     FinalizarAdopcionComponent,
@@ -67,7 +66,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
