@@ -42,6 +42,7 @@
   - Angular
   - MySQL
   - Python
+  - Django
   
 </article>
   
@@ -54,13 +55,12 @@
 <section id="acknowledgments">
   <h2>Contribuidores</h2>
   
-  - [Melanie Reyes](https://github.com/MelanieR24)
-  - [Juan Ezequiel Gomez](https://github.com/JuanEzequielGomez)
-  - [Fabiana Jazmin Amato](https://github.com/AmatoJazmin)
-  - [Axel Ezequiel Montivero](https://github.com/Ezmant)
-  - [Mattos Nicolas](https://github.com/NicolasMattos03)
-  - [Sanabria Jose Maria](https://github.com/josemaria-s)
-  - [Moreno Alejandro](https://github.com/MoCAlejandro)
+  - [Melanie Reyes] --> (https://github.com/MelanieR24)
+  - [Juan Ezequiel Gomez] --> (https://github.com/JuanEzequielGomez)
+  - [Fabiana Jazmin Amato]  --> (https://github.com/AmatoJazmin)
+  - [Axel Ezequiel Montivero]  --> (https://github.com/Ezmant)
+  - [Nicolas Mattos ]  --> (https://github.com/NicolasMattos03)
+  - [Alejandro Moreno]  --> (https://github.com/MoCAlejandro)
  
 
 
