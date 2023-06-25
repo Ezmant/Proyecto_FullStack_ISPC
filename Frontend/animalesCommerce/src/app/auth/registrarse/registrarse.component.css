@@ -16,7 +16,14 @@ main {
     font-size: 14px;
     margin-top: 5px;
 }
-      
+
+.ng-valid:not(registrarse).ng-touched{
+    border-left: 5px solid #42a948;
+}
+
+.ng-invalid:not(registrarse).ng-touched{
+    border-left: 5px solid #a94442;
+}
 .error-message span {
     display: block;
 }

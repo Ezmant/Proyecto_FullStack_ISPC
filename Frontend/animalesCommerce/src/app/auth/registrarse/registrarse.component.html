@@ -23,7 +23,7 @@
             <input type="password" class="form-control" id="passcon" formControlName="passcon" required>
             <div *ngIf="registrarse.get('passcon')?.invalid && registrarse.get('passcon')?.touched" class="error-message">
                 <span *ngIf="registrarse.get('passcon')?.hasError('required')">La contraseña es requerida.</span>
-                <span *ngIf="registrarse.get('passcon')?.errors?.['matchPassword']">Las contraseñas no coinciden.</span>
+                <span *ngIf="registrarse.get('passcon')?.hasError('passwordMismatch')">Las contraseñas no coinciden.</span>
             </div>
             
         </div>
@@ -68,7 +68,9 @@
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Registrarse</button>
         </div>
-        
+        <div class="registro">
+            <span class="success-message" *ngIf="registro2">Campos Aprobados!</span>
+        </div>
       
     </form>
 </main>
