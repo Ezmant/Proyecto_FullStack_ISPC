@@ -30,9 +30,26 @@ export class RegistrarseComponent implements OnInit {
       localidad: ['', [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
       provincia: ['', [Validators.required, Validators.pattern('[a-zA-ZÁ-Úá-ú ]*')]],
     }, { validators: [passwordConfirmationValidator('password')] });
+
+    this.registrarse.valueChanges.subscribe(() => {
+      if (this.registrarse.errors) {
+        this.registrarse.get('passcon')?.setErrors({ passwordMismatch: true });
+      } else {
+        this.registrarse.get('passcon')?.setErrors(null);
+      }
+    });
   }
 
+  
+
   ngOnInit(): void {}
+
+  passwordConfirmationValidator(group: FormGroup): Validators | null {
+    const password = group.get('password')?.value;
+    const confirmPassword = group.get('passcon')?.value;
+
+    return password !== confirmPassword ? { passwordMismatch: true } : null;
+  }
 
   submitForm(event: Event) {
     event.preventDefault();
